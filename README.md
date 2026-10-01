@@ -13,7 +13,7 @@ observability. Full instructions and supporting scripts are retained.
 | [Workflows](.agents/workflows/) | Code change, debugging, review, Jira lifecycle, research setup/continuation and Fusion |
 | [Skills](.agents/skills/) | All 13 Gewgur skills; autoresearch; Council/Fusion; Herdr; full Caveman and Ponytail skill sets |
 | [Role prompts](.agents/agents/) | Investigator, code reviewer, bug hunter, senior Python, prompt engineer and devil's advocate |
-| [Fusion prompts](.agents/prompts/fusion/) | Independent proposal, synthesis, planning identity and exact-plan voting |
+| [Engineering prompts](.agents/prompts/) | Full planner, test writer, builder, adversarial reviewer, reviewer, documenter, scout and Fusion task/system templates |
 | [Backend profile](.agents/profiles/langgraph-backend.md) | Full project guide for a FastAPI/LangGraph/retrieval backend |
 
 ## Use

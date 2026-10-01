@@ -709,5 +709,103 @@
     "source_sha256": "3ad7047d48513080caef1ca9d047700a626d6b93cc310b742c887dba69471ce4",
     "sha256": "3ad7047d48513080caef1ca9d047700a626d6b93cc310b742c887dba69471ce4",
     "changes": []
+  },
+  {
+    "path": ".agents/prompts/builder/system.md",
+    "source": "personal-engineering-prompts/builder/system.md",
+    "source_sha256": "b18a7c426a3fbb680a1e6f0a22769391059b69e7f665eb6ae5f45ae725a7492c",
+    "sha256": "b18a7c426a3fbb680a1e6f0a22769391059b69e7f665eb6ae5f45ae725a7492c",
+    "changes": []
+  },
+  {
+    "path": ".agents/prompts/builder/user.md",
+    "source": "personal-engineering-prompts/builder/user.md",
+    "source_sha256": "08c2fc3f54ab051a140afb2f24045a82a83fde3a423362b247a43d17f9a898de",
+    "sha256": "08c2fc3f54ab051a140afb2f24045a82a83fde3a423362b247a43d17f9a898de",
+    "changes": []
+  },
+  {
+    "path": ".agents/prompts/documenter/system.md",
+    "source": "personal-engineering-prompts/documenter/system.md",
+    "source_sha256": "6a9ef78af751e4e33391dfbf003c9879c3779403d16ec62e4520aa4a52d89af7",
+    "sha256": "6a9ef78af751e4e33391dfbf003c9879c3779403d16ec62e4520aa4a52d89af7",
+    "changes": []
+  },
+  {
+    "path": ".agents/prompts/documenter/user.md",
+    "source": "personal-engineering-prompts/documenter/user.md",
+    "source_sha256": "c18b6766262ae0534df17be01480602e5338655eb71220fcc13f8606c5c32b93",
+    "sha256": "c18b6766262ae0534df17be01480602e5338655eb71220fcc13f8606c5c32b93",
+    "changes": []
+  },
+  {
+    "path": ".agents/prompts/planner/system.md",
+    "source": "personal-engineering-prompts/planner/system.md",
+    "source_sha256": "e1b05948fbb48b76241a5f363cb8876d6433d90428eca28bc30384be22251a46",
+    "sha256": "e1b05948fbb48b76241a5f363cb8876d6433d90428eca28bc30384be22251a46",
+    "changes": []
+  },
+  {
+    "path": ".agents/prompts/planner/user.md",
+    "source": "personal-engineering-prompts/planner/user.md",
+    "source_sha256": "c924faf5b8d03bc4d239720ce5652eb969ca5e83febb588d5b28b953e7158369",
+    "sha256": "c924faf5b8d03bc4d239720ce5652eb969ca5e83febb588d5b28b953e7158369",
+    "changes": []
+  },
+  {
+    "path": ".agents/prompts/reviewer/system.md",
+    "source": "personal-engineering-prompts/reviewer/system.md",
+    "source_sha256": "8e4d07715bf8cf2278c7454dd6ecd8fec2c70233e9b231fe2df03d2c794a7739",
+    "sha256": "8e4d07715bf8cf2278c7454dd6ecd8fec2c70233e9b231fe2df03d2c794a7739",
+    "changes": []
+  },
+  {
+    "path": ".agents/prompts/reviewer/user.md",
+    "source": "personal-engineering-prompts/reviewer/user.md",
+    "source_sha256": "65d89b1ab7b55d8b0250a64407ec6eb38d39de02d2fe17f537d2495714aa4b22",
+    "sha256": "65d89b1ab7b55d8b0250a64407ec6eb38d39de02d2fe17f537d2495714aa4b22",
+    "changes": []
+  },
+  {
+    "path": ".agents/prompts/scout/system.md",
+    "source": "personal-engineering-prompts/scout/system.md",
+    "source_sha256": "0bb40d263375a1a16e72800ef472e5c372316b0c165795a80b3b1f5e2afcf30c",
+    "sha256": "0bb40d263375a1a16e72800ef472e5c372316b0c165795a80b3b1f5e2afcf30c",
+    "changes": []
+  },
+  {
+    "path": ".agents/prompts/scout/user.md",
+    "source": "personal-engineering-prompts/scout/user.md",
+    "source_sha256": "54d7114b9ee00e4cf8b8495a2b52a2e7840625653adab27d0d38e4c75c439063",
+    "sha256": "54d7114b9ee00e4cf8b8495a2b52a2e7840625653adab27d0d38e4c75c439063",
+    "changes": []
+  },
+  {
+    "path": ".agents/prompts/test_reviewer/system.md",
+    "source": "personal-engineering-prompts/test_reviewer/system.md",
+    "source_sha256": "a1bdf776d7f312b07f0c4f0daf23be9102c21484d47c7f21b4b201f8970609d2",
+    "sha256": "a1bdf776d7f312b07f0c4f0daf23be9102c21484d47c7f21b4b201f8970609d2",
+    "changes": []
+  },
+  {
+    "path": ".agents/prompts/test_reviewer/user.md",
+    "source": "personal-engineering-prompts/test_reviewer/user.md",
+    "source_sha256": "5722a11303ee10ab4c1740b1d72695772a45de4113c8676fc9e059a9885c77c5",
+    "sha256": "5722a11303ee10ab4c1740b1d72695772a45de4113c8676fc9e059a9885c77c5",
+    "changes": []
+  },
+  {
+    "path": ".agents/prompts/test_writer/system.md",
+    "source": "personal-engineering-prompts/test_writer/system.md",
+    "source_sha256": "042d18a362dda6823a0301841cd09f738e18f6910f112435be77cfa19aa2c057",
+    "sha256": "042d18a362dda6823a0301841cd09f738e18f6910f112435be77cfa19aa2c057",
+    "changes": []
+  },
+  {
+    "path": ".agents/prompts/test_writer/user.md",
+    "source": "personal-engineering-prompts/test_writer/user.md",
+    "source_sha256": "9912f4402e3e8a4520c5eca2c43bfb6b7ff8d8f3b660d6b77b2de085791f9d6a",
+    "sha256": "9912f4402e3e8a4520c5eca2c43bfb6b7ff8d8f3b660d6b77b2de085791f9d6a",
+    "changes": []
   }
 ]

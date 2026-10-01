@@ -9,7 +9,7 @@ original hashes and every public-configuration replacement.
 - [workflows](workflows/) — code change, debugging, review, Jira lifecycle and research entry points.
 - [skills](skills/) — task-specific capabilities, Caveman, Ponytail, autoresearch and Council/Fusion.
 - [agents](agents/) — investigator, code reviewer and four specialist evaluation roles.
-- [prompts/fusion](prompts/fusion/) — complete proposal, synthesis, planning and exact-plan voting templates.
+- [prompts](prompts/) — all 18 full engineering task/system templates, including Fusion.
 - [profiles/langgraph-backend.md](profiles/langgraph-backend.md) — the full backend project guide, with public placeholders.
 
 ## Routing

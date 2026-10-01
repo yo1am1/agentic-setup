@@ -14,7 +14,9 @@ Full instructions remain; there are no synthesized replacements for source skill
   the existing help prompt refers to it. MIT, Julius Brussee.
 - Installed Ponytail 4.10.0: all six skill directories. MIT, DietrichGebert.
 - Personal evaluation agents: all four full role prompts, including host metadata.
-- Personal Fusion prompt templates: system, opinion, synthesis and vote text only.
+- Personal engineering prompt templates: all 18 planner, test writer, builder,
+  adversarial test reviewer, reviewer, documenter, scout and Fusion files. Only
+  prompt text and JSON contract examples are exported; no runtime/config/UI.
 - Agentic-environment research entry points: existing full Markdown workflows.
 - Gewgur adapter generator: source-based, extended to include skill support files.
 
