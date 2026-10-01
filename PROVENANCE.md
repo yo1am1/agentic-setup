@@ -1,25 +1,46 @@
 # Provenance
 
-This release replaces the initial synthetic summaries with the installed sources.
-`source-manifest.json` records the source path and SHA-256 of every copied file.
-All copied files are byte-identical to their sources.
+`source-manifest.json` records each source origin, original SHA-256, exported
+SHA-256 and exact text replacements. Unchanged copies have identical hashes.
+Full instructions remain; there are no synthesized replacements for source skills.
 
-- autoresearch: installed Claude skill, including create/run references and templates.
-- council: installed shared skill, including its transcript extraction script.
-- sssf: resolved installed skill in the personal SSSF checkout, including cookbooks,
-  references, templates, scripts and visualizer source; the full live engine is not bundled.
-- factory-commands: installed Claude skill documenting the author's just recipes.
-- workflow entry points: existing agentic-environment Markdown files.
+## Sources
 
-Excluded: evaluation workspaces/transcripts, caches, bytecode, node_modules, built
-dist, secrets, live factory state and provider settings. autoresearch-workspace is
-an evaluation output directory, not a second installed skill.
+- Gewgur `.agents`: all 8 rules, 13 skills and their helpers, 4 workflows and
+  2 role prompts. The full `AGENTS.md` becomes an optional backend profile.
+- Installed autoresearch, Council and Herdr: complete skill bundles.
+- Installed Caveman family: actual local versions and compression helpers;
+  caveman-review is supplied from the installed Caveman plugin cache because
+  the existing help prompt refers to it. MIT, Julius Brussee.
+- Installed Ponytail 4.10.0: all six skill directories. MIT, DietrichGebert.
+- Personal evaluation agents: all four full role prompts, including host metadata.
+- Personal Fusion prompt templates: system, opinion, synthesis and vote text only.
+- Agentic-environment research entry points: existing full Markdown workflows.
+- Gewgur adapter generator: source-based, extended to include skill support files.
 
-Source instructions are retained even where they assume another installed skill
-or a full local engine. The README states those dependencies rather than changing
-behavior to make the export appear portable.
+## Public configuration replacements
 
-Earlier repository commits contain rewritten summaries and are superseded by this
-source export. Research inspiration: Karpathy autoresearch; factory/fusion
-inspiration: disler's agent workflow examples. This repository makes no claim to
-have invented the underlying agent CLIs, Herdr, Pi or model families.
+Jira cloud/account/instance identifiers, the repository remote, project summary
+prefix, issue-key prefix, default parent epic and a Drive folder example become
+configuration placeholders. A named customer becomes `configured customer`.
+Procedure steps, constraints, code paths and test commands remain.
+Replacement categories are recorded per file in the manifest; removed private
+values are not repeated in the audit.
+
+Fusion is a full invocation alias of the installed Council skill: only its name,
+slash invocation, heading and helper installation path change. Research pattern
+names and the complete consensus protocol are unchanged. The separate Fusion
+JSON templates are preserved verbatim and are not confused with Council ballots.
+
+Two original skill descriptions contained unquoted colons and were invalid YAML.
+Only scalar quoting was corrected; their wording and full instructions remain.
+
+The adapter extension copies every text support file alongside generated Claude
+SKILL.md files. This fixes the source generator's missing-helper behavior; path-
+scoped rules and role generation keep the existing implementation.
+
+The README, routing overview and library AGENTS guide describe this publication;
+they are not presented as copied source instructions. No live handovers, personal
+transcripts, provider configuration, credentials, application code, factory engine
+or UI are included. Historical commits are retained; the current tree reflects
+this scope. Third-party skills are attributed, not claimed as original inventions.

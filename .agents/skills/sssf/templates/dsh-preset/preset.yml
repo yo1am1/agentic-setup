@@ -1,3 +1,0 @@
-name: SSSF Factory
-description: Factory operator running scout, plan, SDLC, and Fusion workflows in Docker, with read-only access to this project's own documentation.
-order: 5

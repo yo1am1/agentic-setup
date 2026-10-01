@@ -1,44 +1,60 @@
 # Agentic setup
 
-My actual coding-agent skills and workflows, exported from the setup I use.
+The rules, skills, workflows and prompts I use for AI-assisted development.
 By [Yehor Trepalin](https://github.com/yo1am1).
 
-| Skill | What it does | Runtime |
-| --- | --- | --- |
-| [autoresearch](.agents/skills/autoresearch/SKILL.md) | Create experiments; run or continue champion-based loops; retain failures; optional MLflow | Coding agent + uv + experiment dependencies |
-| [council](.agents/skills/council/SKILL.md) | Independent anonymous research, lossless fusion, hash-acknowledged voting and debate | Herdr session, selected agent CLIs; caveman skill unless plain style is selected |
-| [sssf](.agents/skills/sssf/SKILL.md) | Operate deterministic software-factory workflows, typed outputs, gates, retries and traces | Full SSSF engine checkout; pi; configured providers |
-| [factory-commands](.agents/skills/factory-commands/SKILL.md) | Explain global/per-project just recipes, costs, writes and session chaining | Existing factory and its justfiles |
+The core comes from my Gewgur `.agents` layer: focused code changes, failure
+analysis, review, validation, agent tool/state contracts, retrieval and LLM
+observability. Full instructions and supporting scripts are retained.
 
-The instructions, references, templates and supporting scripts are preserved from
-installed sources, not rewritten as shorter substitute skills. Older entry-point
-workflows are preserved in [.agents/workflows](.agents/workflows).
+| Area | Contents |
+| --- | --- |
+| [Rules](.agents/rules/) | Safety, Git, testing, agent code, prompts, retrieval, state and observability |
+| [Workflows](.agents/workflows/) | Code change, debugging, review, Jira lifecycle, research setup/continuation and Fusion |
+| [Skills](.agents/skills/) | All 13 Gewgur skills; autoresearch; Council/Fusion; Herdr; full Caveman and Ponytail skill sets |
+| [Role prompts](.agents/agents/) | Investigator, code reviewer, bug hunter, senior Python, prompt engineer and devil's advocate |
+| [Fusion prompts](.agents/prompts/fusion/) | Independent proposal, synthesis, planning identity and exact-plan voting |
+| [Backend profile](.agents/profiles/langgraph-backend.md) | Full project guide for a FastAPI/LangGraph/retrieval backend |
 
 ## Use
 
-Copy selected skill directories into your host's skill search path. Check its
-instructions and required runtimes before invoking it. Codex discovers project
-skills under `.agents/skills`; Claude Code can use selected directories under
-`.claude/skills`. Do not overwrite existing skills blindly.
-
-`autoresearch` is self-contained as an instruction/template bundle. `council`
-requires Herdr and its CLI integrations, including the installed caveman skill for
-the default style; choose `style=plain` if that skill is unavailable.
-
-The SSSF export is a source snapshot for inspecting my setup, **not a standalone
-factory installation**. Its installer expects the full engine's `adws/`, rosters,
-prompts and justfile; this repository does not contain that engine. Its own
-runtime requirements and permission boundaries remain documented in the skill.
-The factory-commands skill also records older recipes; use your engine's current
-justfile as the command authority.
-
-## Verify the export
+Browse [.agents/README.md](.agents/README.md) for routing. Merge selected guides
+into your project's agent layer and link the applicable rules/workflows from its
+`AGENTS.md`. Project-specific skills keep their source `src/` paths and helper
+imports; adapt those to the consuming repository. Jira defaults and a Drive folder
+ID are placeholders, not working account configuration.
 
 ```sh
+uv sync --locked
 make check
+make sync-agents
 ```
 
-This checks metadata, the copied-file SHA-256 manifest and Python syntax. It does
-not launch agents or spend model tokens. [Provenance](PROVENANCE.md) records source
-paths, exclusions and runtime limitations. [Autoresearcher](https://github.com/yo1am1/autoresearcher)
-contains the research experiment.
+The adapter generator copies full skill directories, including referenced helper
+scripts, into Claude's project skills; it also generates Claude rules/roles and
+Cursor rules. Generated files stay out of the public source tree.
+
+## Personal skills
+
+- [Caveman](.agents/skills/caveman/SKILL.md): terse communication, plus commit, review, compression, help and stats instructions.
+- [Ponytail](.agents/skills/ponytail/SKILL.md): minimal implementation, plus review, audit, debt, help and gain instructions.
+- [Fusion](.agents/skills/fusion/SKILL.md) / [Council](.agents/skills/council/SKILL.md): the same complete anonymous research, fusion, voting and debate workflow under two invocation names.
+- [Autoresearch](.agents/skills/autoresearch/SKILL.md): full create/run instructions and templates; runnable experiments are in [autoresearcher](https://github.com/yo1am1/autoresearcher).
+
+## Host requirements
+
+These are instruction files and selected helpers. Herdr/Council needs a Herdr
+session and configured coding-agent CLIs. Caveman stats needs its original plugin
+hooks; skills alone do not activate session hooks or auto-default modes. Compression
+uses Claude or an Anthropic API key and can incur model costs. Ponytail gain figures
+are upstream benchmarks, not measurements of my projects.
+
+Google Drive helpers need the Google API/OAuth libraries and your own credentials.
+LangSmith/PostHog helpers retain imports from the consuming backend; that backend
+and its SDKs are not bundled. Jira requires your own MCP integration and mappings.
+The project-development research entry points use the separately installed
+`agent-env` CLI. No external integration is contacted by `make check`.
+
+[Provenance](PROVENANCE.md) separates unchanged copies, configuration replacements
+and the Fusion alias. [Third-party licenses](licenses/) retain Caveman/Ponytail
+attribution. [Validation](VALIDATION.md) states exactly what the checks verify.
