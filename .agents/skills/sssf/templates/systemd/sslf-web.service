@@ -1,0 +1,25 @@
+[Unit]
+Description=SSLF life factory web app (loopback, reachable over Tailscale)
+After=sslf-api.service
+Wants=sslf-api.service
+# A misconfiguration should surface as a stopped unit, not a hot restart loop.
+StartLimitIntervalSec=60
+StartLimitBurst=5
+
+[Service]
+Type=simple
+WorkingDirectory=@@SSLF_ROOT@@/apps/web
+Environment=PATH=@@PATH@@
+Environment=SSLF_WEB_PORT=@@SSLF_WEB_PORT@@
+# vite.config.ts proxies /api here, so the API itself never leaves loopback.
+Environment=SSLF_API_PORT=@@SSLF_API_PORT@@
+# `vite preview` serves the built dist/ without a file watcher. Its Host fence
+# (allowedHosts) reads SSLF_TRUSTED_HOSTS, resolved at every start by the same
+# script as the other two fences; empty output leaves it loopback-only.
+# Every shell `$` is written `$$` because systemd expands `$` first.
+ExecStart=/bin/bash -c 'exec env SSLF_TRUSTED_HOSTS="$$(bash @@AUTHORITIES@@ "$$SSLF_WEB_PORT" | paste -sd, -)" @@NODE@@ @@SSLF_ROOT@@/node_modules/vite/bin/vite.js preview --host 127.0.0.1 --port "$$SSLF_WEB_PORT" --strictPort'
+Restart=on-failure
+RestartSec=5
+
+[Install]
+WantedBy=default.target

@@ -1,0 +1,28 @@
+[Unit]
+Description=SSSF Software Factory web app (loopback, reachable over Tailscale)
+# Tailscale only decides which authorities the Host fence accepts. With it down
+# the app still starts, loopback-only, so a tailnet problem is never a boot
+# failure for local work.
+After=network-online.target tailscaled.service
+Wants=network-online.target
+# A misconfiguration should surface as a stopped unit, not a hot restart loop.
+StartLimitIntervalSec=60
+StartLimitBurst=5
+
+[Service]
+Type=simple
+WorkingDirectory=@@VISUALIZER@@
+Environment=PORT=@@PORT@@
+Environment=PATH=@@PATH@@
+# The allowlist is resolved at every start, not baked into this file: a
+# Tailscale IP or MagicDNS name can change, and one script owns that answer for
+# this unit and for the dsh web UI. Empty output leaves the fence loopback-only.
+#
+# Every `$` is written `$$`: systemd expands its own specifiers in ExecStart
+# before the shell runs, so an unescaped one is substituted, not passed through.
+ExecStart=/bin/bash -c 'exec env SSSF_TRUSTED_HOSTS="$$(bash @@AUTHORITIES@@ "$$PORT" | paste -sd, -)" @@BUN@@ run server/index.ts'
+Restart=on-failure
+RestartSec=5
+
+[Install]
+WantedBy=default.target

@@ -1,8 +1,6 @@
 # Validation
 
-`make check` passed: four skills validated; all local Markdown links resolved;
-one unittest regression case verified valid input and rejection of malformed
-metadata and broken links. Ruff and Bandit checks of validation scripts also passed.
-All four skills passed the skill-creator frontmatter validator.
-
-These are structure checks, not measured agent-performance improvements.
+`make check` validates metadata, exact-source SHA-256 checksums and Python syntax.
+A negative test checks rejection of wrong metadata and unrecorded source changes.
+Agent behavior, Herdr integration and the SSSF live runtime are not exercised by
+this export check. No evaluation transcripts or machine credentials are shipped.

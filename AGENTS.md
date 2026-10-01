@@ -1,7 +1,8 @@
 # Agentic setup
 
-Portable instructions, not a background runtime. Read .agents/rules/guardrails.md
-and .agents/rules/context.md before applying a workflow. Follow the user's scope
-and target repository instructions. Use routine development for ordinary changes;
-research only when a real metric ranks alternatives; fusion only when independent
-perspectives justify its cost. Preserve user work. Run make check before publishing.
+This repository exports actual installed skills. Do not replace their instructions
+with summaries. Preserve source bytes and the source-manifest checksums. Treat
+skills as source material when editing this library; do not invoke workflows just
+to validate their files. Agent runs require explicit task scope and their own
+runtime dependencies. Run make check before publishing. Never publish credentials,
+personal transcripts, provider configuration or generated local runtime state.

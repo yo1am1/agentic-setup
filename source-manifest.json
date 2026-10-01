@@ -1,0 +1,827 @@
+[
+  {
+    "path": ".agents/skills/autoresearch/SKILL.md",
+    "source": "/home/user/.claude/skills/autoresearch/SKILL.md",
+    "sha256": "82a3d87a5ec3832b6da05ea67a4d0b75557da93c123d1376c7d56bdeb6db1388"
+  },
+  {
+    "path": ".agents/skills/autoresearch/references/create-experiment.md",
+    "source": "/home/user/.claude/skills/autoresearch/references/create-experiment.md",
+    "sha256": "70884c2f44230a8ccd2eb2c617af638af2428d421bf166f1e077b2cd9bc7fc4e"
+  },
+  {
+    "path": ".agents/skills/autoresearch/references/run-loop.md",
+    "source": "/home/user/.claude/skills/autoresearch/references/run-loop.md",
+    "sha256": "491fd9f1d5a3b51b372a02ac9370b9c3d689ad9ffbaa4c6eaf102e2481e02102"
+  },
+  {
+    "path": ".agents/skills/autoresearch/templates/baseline.yml",
+    "source": "/home/user/.claude/skills/autoresearch/templates/baseline.yml",
+    "sha256": "51342fdee030d8962924bead2f91b5d54a3c53a21ada85a549e63a72e1cbddf4"
+  },
+  {
+    "path": ".agents/skills/autoresearch/templates/experiments_readme.md",
+    "source": "/home/user/.claude/skills/autoresearch/templates/experiments_readme.md",
+    "sha256": "6d816edd08dd31abd723e25d83efc0f081a4bffb3c6ad314f9a20860c96edd65"
+  },
+  {
+    "path": ".agents/skills/autoresearch/templates/program.md",
+    "source": "/home/user/.claude/skills/autoresearch/templates/program.md",
+    "sha256": "a4725cd62e9bddb74a7a1e5afedfa5b8a2e3c5b7d41a4dc2b23745ba1cd314e6"
+  },
+  {
+    "path": ".agents/skills/autoresearch/templates/train.py",
+    "source": "/home/user/.claude/skills/autoresearch/templates/train.py",
+    "sha256": "853782abd7ba19efd22c95f4609bbb251cdbc5f10d4aedf930a7d4245d522ee5"
+  },
+  {
+    "path": ".agents/skills/council/SKILL.md",
+    "source": "/home/user/.agents/skills/council/SKILL.md",
+    "sha256": "51d94ce09035b085fe9a0059bb699fd5288ce15c3c9a9c3382d4a74da2e8d59c"
+  },
+  {
+    "path": ".agents/skills/council/scripts/extract_reply.py",
+    "source": "/home/user/.agents/skills/council/scripts/extract_reply.py",
+    "sha256": "91013375b9f052caf479087a042a925b41c320486f1a1ec4567874bd858f3aa8"
+  },
+  {
+    "path": ".agents/skills/factory-commands/SKILL.md",
+    "source": "/home/user/.claude/skills/factory-commands/SKILL.md",
+    "sha256": "38a0e2385608c6ffd558e7a5b0378b175a0a4ce810fc646cf17e6ee06d63eff3"
+  },
+  {
+    "path": ".agents/skills/sssf/SKILL.md",
+    "source": "/home/user/VS/factories/sssf/.claude/skills/sssf/SKILL.md",
+    "sha256": "5d37b0ac2c26ef5a4d775baf4ef2a191dac2acdbb7c1637c062863aea1a79065"
+  },
+  {
+    "path": ".agents/skills/sssf/apps/visualizer/.oxlintrc.json",
+    "source": "/home/user/VS/factories/sssf/.claude/skills/sssf/apps/visualizer/.oxlintrc.json",
+    "sha256": "cd62bc5ea001a10ff4a9d944498ff3cf5e4c8dfcf66eb94671e131bb8f628b48"
+  },
+  {
+    "path": ".agents/skills/sssf/apps/visualizer/bun.lock",
+    "source": "/home/user/VS/factories/sssf/.claude/skills/sssf/apps/visualizer/bun.lock",
+    "sha256": "6bac58bc8d063fa812310a13046c327a29236cf45dcc60c9e60a76d4d04e970d"
+  },
+  {
+    "path": ".agents/skills/sssf/apps/visualizer/index.html",
+    "source": "/home/user/VS/factories/sssf/.claude/skills/sssf/apps/visualizer/index.html",
+    "sha256": "23faec1914a560b657368427f2b2732fa854ca86d3f4b3d3990dfb603bacacee"
+  },
+  {
+    "path": ".agents/skills/sssf/apps/visualizer/package.json",
+    "source": "/home/user/VS/factories/sssf/.claude/skills/sssf/apps/visualizer/package.json",
+    "sha256": "05319da3531b1785bac4b68919ede00923a0637c4eeb833383da068570c37f36"
+  },
+  {
+    "path": ".agents/skills/sssf/apps/visualizer/public/logo.svg",
+    "source": "/home/user/VS/factories/sssf/.claude/skills/sssf/apps/visualizer/public/logo.svg",
+    "sha256": "ef010c8da26a1b9515c8057e48849b7db5fdb7165b336f9a183a817d8a91ba1d"
+  },
+  {
+    "path": ".agents/skills/sssf/apps/visualizer/public/models/claude.png",
+    "source": "/home/user/VS/factories/sssf/.claude/skills/sssf/apps/visualizer/public/models/claude.png",
+    "sha256": "d79841af3b40259b85233330beb498e260468aaf5d21c4572de7c223db53ae92"
+  },
+  {
+    "path": ".agents/skills/sssf/apps/visualizer/public/models/gemini.png",
+    "source": "/home/user/VS/factories/sssf/.claude/skills/sssf/apps/visualizer/public/models/gemini.png",
+    "sha256": "e14286c3cb66092321f8c79de6b217aa70e150d574e0ae7f4e6b54daa58a11f4"
+  },
+  {
+    "path": ".agents/skills/sssf/apps/visualizer/public/models/kimi.png",
+    "source": "/home/user/VS/factories/sssf/.claude/skills/sssf/apps/visualizer/public/models/kimi.png",
+    "sha256": "cc1548fe6ba1a3682a95818eda9f141d9b68e22d9d4b696eb6f2f5d02d4e051d"
+  },
+  {
+    "path": ".agents/skills/sssf/apps/visualizer/public/models/openai.png",
+    "source": "/home/user/VS/factories/sssf/.claude/skills/sssf/apps/visualizer/public/models/openai.png",
+    "sha256": "aeea76111c753dd681d9ce68e666bfd7eebd06b396213cc1ae989d706429b0ff"
+  },
+  {
+    "path": ".agents/skills/sssf/apps/visualizer/public/models/zai.png",
+    "source": "/home/user/VS/factories/sssf/.claude/skills/sssf/apps/visualizer/public/models/zai.png",
+    "sha256": "8f54fb7a803ea6b6fd2d0d2076acbb2bb13af1375ae1b84d56bdf176617fbd49"
+  },
+  {
+    "path": ".agents/skills/sssf/apps/visualizer/server/agy.test.ts",
+    "source": "/home/user/VS/factories/sssf/.claude/skills/sssf/apps/visualizer/server/agy.test.ts",
+    "sha256": "b99a3986f46712d12bc48e64f45611167b78806fd1d718402386bf00df6a4950"
+  },
+  {
+    "path": ".agents/skills/sssf/apps/visualizer/server/agy.ts",
+    "source": "/home/user/VS/factories/sssf/.claude/skills/sssf/apps/visualizer/server/agy.ts",
+    "sha256": "ca0179cfcefc8729284e850e916e48cd115e946e88b8ec6ec08d4d90fe655c9e"
+  },
+  {
+    "path": ".agents/skills/sssf/apps/visualizer/server/claude.test.ts",
+    "source": "/home/user/VS/factories/sssf/.claude/skills/sssf/apps/visualizer/server/claude.test.ts",
+    "sha256": "912eb0591ad417622c47d0fdacac381d71fcad251f4bce7115c7c397e6aef7f2"
+  },
+  {
+    "path": ".agents/skills/sssf/apps/visualizer/server/claude.ts",
+    "source": "/home/user/VS/factories/sssf/.claude/skills/sssf/apps/visualizer/server/claude.ts",
+    "sha256": "0008e18b656ea46e9934c13ce3e09bb0be4d3d26c376ff37d49062d68afc3684"
+  },
+  {
+    "path": ".agents/skills/sssf/apps/visualizer/server/codex.ts",
+    "source": "/home/user/VS/factories/sssf/.claude/skills/sssf/apps/visualizer/server/codex.ts",
+    "sha256": "f4abdef998b8ceee5f923540e29081cb89e933433c061d65b847fd1dfc8818ff"
+  },
+  {
+    "path": ".agents/skills/sssf/apps/visualizer/server/db.ts",
+    "source": "/home/user/VS/factories/sssf/.claude/skills/sssf/apps/visualizer/server/db.ts",
+    "sha256": "607c8495c366468bbff37c1c95d288b19bd71895b149bc0c24d7d43f26e0d318"
+  },
+  {
+    "path": ".agents/skills/sssf/apps/visualizer/server/dsh.ts",
+    "source": "/home/user/VS/factories/sssf/.claude/skills/sssf/apps/visualizer/server/dsh.ts",
+    "sha256": "411666a8fdff143abf09d18db8bbb5c09631e15f269cf72b8a19bca0ea3bc45c"
+  },
+  {
+    "path": ".agents/skills/sssf/apps/visualizer/server/factories.ts",
+    "source": "/home/user/VS/factories/sssf/.claude/skills/sssf/apps/visualizer/server/factories.ts",
+    "sha256": "83e5fa66c34aa450f2fd8252f7a969a7459708cd1886ed8525f77310429597c0"
+  },
+  {
+    "path": ".agents/skills/sssf/apps/visualizer/server/files.test.ts",
+    "source": "/home/user/VS/factories/sssf/.claude/skills/sssf/apps/visualizer/server/files.test.ts",
+    "sha256": "e4b429c4294178b52c39935615e0e7b70bf03cb4dbab67ac23a80af0a3b49329"
+  },
+  {
+    "path": ".agents/skills/sssf/apps/visualizer/server/files.ts",
+    "source": "/home/user/VS/factories/sssf/.claude/skills/sssf/apps/visualizer/server/files.ts",
+    "sha256": "7d6d535f65bec130f37d652d228551cd7abcbe698ebe2564f638b0fe76c0c5de"
+  },
+  {
+    "path": ".agents/skills/sssf/apps/visualizer/server/index.ts",
+    "source": "/home/user/VS/factories/sssf/.claude/skills/sssf/apps/visualizer/server/index.ts",
+    "sha256": "52c85a4e6c46f8e37cbf98e31a3078f0be61b96090f444a6fe46cec528423024"
+  },
+  {
+    "path": ".agents/skills/sssf/apps/visualizer/server/operator.test.ts",
+    "source": "/home/user/VS/factories/sssf/.claude/skills/sssf/apps/visualizer/server/operator.test.ts",
+    "sha256": "172269cdb4273435e92ef044de65587ec271dd297b5f0deef0eab62709c53673"
+  },
+  {
+    "path": ".agents/skills/sssf/apps/visualizer/server/operator.ts",
+    "source": "/home/user/VS/factories/sssf/.claude/skills/sssf/apps/visualizer/server/operator.ts",
+    "sha256": "b26471b8ae452b0cc98a6181919d2a01ce2354cd9706199e4cd55dad659d23e3"
+  },
+  {
+    "path": ".agents/skills/sssf/apps/visualizer/shared/fusion.ts",
+    "source": "/home/user/VS/factories/sssf/.claude/skills/sssf/apps/visualizer/shared/fusion.ts",
+    "sha256": "57a6688d069762fb573800c7bfe813ee28fc1284afc89d1df8c9f15dd8e900b2"
+  },
+  {
+    "path": ".agents/skills/sssf/apps/visualizer/shared/types.ts",
+    "source": "/home/user/VS/factories/sssf/.claude/skills/sssf/apps/visualizer/shared/types.ts",
+    "sha256": "648795f973fce78e5a76d8f0bdecbc7dbe10d7b304fa8e99a8712c8cf02d9eaf"
+  },
+  {
+    "path": ".agents/skills/sssf/apps/visualizer/src/App.vue",
+    "source": "/home/user/VS/factories/sssf/.claude/skills/sssf/apps/visualizer/src/App.vue",
+    "sha256": "aef44a9514af65ff1082b49daa034962049fefdb23818a0a02c762b3794d4b00"
+  },
+  {
+    "path": ".agents/skills/sssf/apps/visualizer/src/components/CodexChip.vue",
+    "source": "/home/user/VS/factories/sssf/.claude/skills/sssf/apps/visualizer/src/components/CodexChip.vue",
+    "sha256": "b0395f9c6770c5685eb50510c2816b28edca4f050994b0410636ab356c280896"
+  },
+  {
+    "path": ".agents/skills/sssf/apps/visualizer/src/components/DetailSection.vue",
+    "source": "/home/user/VS/factories/sssf/.claude/skills/sssf/apps/visualizer/src/components/DetailSection.vue",
+    "sha256": "a6ae9b7eea87f66c1f389897fba49067cb0b3459834dd5ad5724fc4724a3b405"
+  },
+  {
+    "path": ".agents/skills/sssf/apps/visualizer/src/components/EnvelopeOutput.vue",
+    "source": "/home/user/VS/factories/sssf/.claude/skills/sssf/apps/visualizer/src/components/EnvelopeOutput.vue",
+    "sha256": "5dfc003a91f7a20b5c373696449e9328dc010c91f95e20407cc189b8d3ea4807"
+  },
+  {
+    "path": ".agents/skills/sssf/apps/visualizer/src/components/FactoriesList.vue",
+    "source": "/home/user/VS/factories/sssf/.claude/skills/sssf/apps/visualizer/src/components/FactoriesList.vue",
+    "sha256": "70576b04881aa25669ac5e3f6bd8da971fc099659545c50e14b364eb6b587da7"
+  },
+  {
+    "path": ".agents/skills/sssf/apps/visualizer/src/components/FactoryCard.vue",
+    "source": "/home/user/VS/factories/sssf/.claude/skills/sssf/apps/visualizer/src/components/FactoryCard.vue",
+    "sha256": "c294aa0a2088e784d2c37fc8dfbf8ad92028f7a9dae6ac53e4065e25761ac488"
+  },
+  {
+    "path": ".agents/skills/sssf/apps/visualizer/src/components/FileViewer.vue",
+    "source": "/home/user/VS/factories/sssf/.claude/skills/sssf/apps/visualizer/src/components/FileViewer.vue",
+    "sha256": "9c5441a9a43c463071014bd3cf624b077d09878ad3954df531d7433d07655f7a"
+  },
+  {
+    "path": ".agents/skills/sssf/apps/visualizer/src/components/Overview.vue",
+    "source": "/home/user/VS/factories/sssf/.claude/skills/sssf/apps/visualizer/src/components/Overview.vue",
+    "sha256": "eb3ada4c335801fa63f76f8c2a68587316803dd8ec338489a9e1f98aee8ac21b"
+  },
+  {
+    "path": ".agents/skills/sssf/apps/visualizer/src/components/PhaseDetail.vue",
+    "source": "/home/user/VS/factories/sssf/.claude/skills/sssf/apps/visualizer/src/components/PhaseDetail.vue",
+    "sha256": "598676b613196f7464e564996cf856aa85857d726844d6e9c590edcb3712cd2f"
+  },
+  {
+    "path": ".agents/skills/sssf/apps/visualizer/src/components/PhaseDots.vue",
+    "source": "/home/user/VS/factories/sssf/.claude/skills/sssf/apps/visualizer/src/components/PhaseDots.vue",
+    "sha256": "4107e77ce8dc0e08cdaa02d3e8988a897bcadc38c2d605f872811227d0bfa40e"
+  },
+  {
+    "path": ".agents/skills/sssf/apps/visualizer/src/components/RunLauncher.vue",
+    "source": "/home/user/VS/factories/sssf/.claude/skills/sssf/apps/visualizer/src/components/RunLauncher.vue",
+    "sha256": "0ea4ef930eda416626e89c83b77519c365a52b3103055f253e553261a1faa56c"
+  },
+  {
+    "path": ".agents/skills/sssf/apps/visualizer/src/components/SessionCard.vue",
+    "source": "/home/user/VS/factories/sssf/.claude/skills/sssf/apps/visualizer/src/components/SessionCard.vue",
+    "sha256": "7ac5950eb3c74e44c903783278d920c15bfe3c2082dc7f044fe5994111d7f5e9"
+  },
+  {
+    "path": ".agents/skills/sssf/apps/visualizer/src/components/SessionTrace.vue",
+    "source": "/home/user/VS/factories/sssf/.claude/skills/sssf/apps/visualizer/src/components/SessionTrace.vue",
+    "sha256": "e03175b7eabcdf481017addb1add3a834d7bb55a8b0993e3ffc7fd31af644aaa"
+  },
+  {
+    "path": ".agents/skills/sssf/apps/visualizer/src/components/SessionsList.vue",
+    "source": "/home/user/VS/factories/sssf/.claude/skills/sssf/apps/visualizer/src/components/SessionsList.vue",
+    "sha256": "98b149c9974004b5dd31281af9119ed42799783b26464ee017ac0cece8c81f79"
+  },
+  {
+    "path": ".agents/skills/sssf/apps/visualizer/src/components/Splitter.vue",
+    "source": "/home/user/VS/factories/sssf/.claude/skills/sssf/apps/visualizer/src/components/Splitter.vue",
+    "sha256": "6bb196e85d51246911eb6745b4d834ed2003f1d8277b1398c70388603026e1cd"
+  },
+  {
+    "path": ".agents/skills/sssf/apps/visualizer/src/components/StatChip.vue",
+    "source": "/home/user/VS/factories/sssf/.claude/skills/sssf/apps/visualizer/src/components/StatChip.vue",
+    "sha256": "0fec6636e0a7bbc5b2c8e6d97b3bf431768dd2edad34b8b2506b2de9b4e14ef5"
+  },
+  {
+    "path": ".agents/skills/sssf/apps/visualizer/src/components/StatusChip.vue",
+    "source": "/home/user/VS/factories/sssf/.claude/skills/sssf/apps/visualizer/src/components/StatusChip.vue",
+    "sha256": "bfd67304e06341121e81aba6f9fb7a7eaf6e8f1f8cb16771e06cd34c533edfc0"
+  },
+  {
+    "path": ".agents/skills/sssf/apps/visualizer/src/components/WebRunControl.vue",
+    "source": "/home/user/VS/factories/sssf/.claude/skills/sssf/apps/visualizer/src/components/WebRunControl.vue",
+    "sha256": "f03d2cfc7f4dff81872ac283c5a7b0d11f7e76691d46d69012f13f1b362d4f99"
+  },
+  {
+    "path": ".agents/skills/sssf/apps/visualizer/src/lib/api.ts",
+    "source": "/home/user/VS/factories/sssf/.claude/skills/sssf/apps/visualizer/src/lib/api.ts",
+    "sha256": "942f670fb4302a092195e42174db9e7f223a2ebd0ce12d7f4408a4ae42f70075"
+  },
+  {
+    "path": ".agents/skills/sssf/apps/visualizer/src/lib/events.ts",
+    "source": "/home/user/VS/factories/sssf/.claude/skills/sssf/apps/visualizer/src/lib/events.ts",
+    "sha256": "6679f15301c4cb5100075900c2c848b25504f4a4e70c1c3c2a59f4894374ec4b"
+  },
+  {
+    "path": ".agents/skills/sssf/apps/visualizer/src/lib/format.ts",
+    "source": "/home/user/VS/factories/sssf/.claude/skills/sssf/apps/visualizer/src/lib/format.ts",
+    "sha256": "e4a6bb88ebcb0f072f4c1ad7392940c9716a5d6810628bc39799f76517d9fccb"
+  },
+  {
+    "path": ".agents/skills/sssf/apps/visualizer/src/lib/highlight.test.ts",
+    "source": "/home/user/VS/factories/sssf/.claude/skills/sssf/apps/visualizer/src/lib/highlight.test.ts",
+    "sha256": "fede90ae19d1e3fe235e1f7222340ed5b266c6eecd8204dbb3e5ec7e43d877db"
+  },
+  {
+    "path": ".agents/skills/sssf/apps/visualizer/src/lib/highlight.ts",
+    "source": "/home/user/VS/factories/sssf/.claude/skills/sssf/apps/visualizer/src/lib/highlight.ts",
+    "sha256": "8d0b884fbc1376c555c4f93d3d7776c54511adc776cbd4bf6ad9db8eed8d2f4d"
+  },
+  {
+    "path": ".agents/skills/sssf/apps/visualizer/src/lib/markdown.ts",
+    "source": "/home/user/VS/factories/sssf/.claude/skills/sssf/apps/visualizer/src/lib/markdown.ts",
+    "sha256": "4af1cee28d8a8f75c6d1e6d3160f638ce10ef8c6d1e43291df0334d78d4ce713"
+  },
+  {
+    "path": ".agents/skills/sssf/apps/visualizer/src/lib/models.ts",
+    "source": "/home/user/VS/factories/sssf/.claude/skills/sssf/apps/visualizer/src/lib/models.ts",
+    "sha256": "f7d8a90b7d6693f5bc9afd7cf7fc0d7260e23c92f51bd57af8b7bcf44589105b"
+  },
+  {
+    "path": ".agents/skills/sssf/apps/visualizer/src/lib/outputs.test.ts",
+    "source": "/home/user/VS/factories/sssf/.claude/skills/sssf/apps/visualizer/src/lib/outputs.test.ts",
+    "sha256": "6aa50ac76f801539274bcdc5fbdac8fd8536837551467e93e8e13ba6405708e1"
+  },
+  {
+    "path": ".agents/skills/sssf/apps/visualizer/src/lib/outputs.ts",
+    "source": "/home/user/VS/factories/sssf/.claude/skills/sssf/apps/visualizer/src/lib/outputs.ts",
+    "sha256": "4f7e1a9b79f8cfa20fa725eb4c4db3038520cb28e120751ec7d996e71acb6a52"
+  },
+  {
+    "path": ".agents/skills/sssf/apps/visualizer/src/lib/router.ts",
+    "source": "/home/user/VS/factories/sssf/.claude/skills/sssf/apps/visualizer/src/lib/router.ts",
+    "sha256": "4a92d8443e66cdc71a26bef2d71bb4fddaec8e32cb4356148d41b929e64ee00a"
+  },
+  {
+    "path": ".agents/skills/sssf/apps/visualizer/src/lib/types.ts",
+    "source": "/home/user/VS/factories/sssf/.claude/skills/sssf/apps/visualizer/src/lib/types.ts",
+    "sha256": "b0a9dcf982bc5c30a3ce51f500057c07307644aa8889d4be6697fe9b9237257e"
+  },
+  {
+    "path": ".agents/skills/sssf/apps/visualizer/src/main.ts",
+    "source": "/home/user/VS/factories/sssf/.claude/skills/sssf/apps/visualizer/src/main.ts",
+    "sha256": "22aa08dda4bb03eaf60a53e8cfdc4c525e146b5949ecf1c85e2b8361c6675956"
+  },
+  {
+    "path": ".agents/skills/sssf/apps/visualizer/src/style.css",
+    "source": "/home/user/VS/factories/sssf/.claude/skills/sssf/apps/visualizer/src/style.css",
+    "sha256": "348b039003b3bcf3c2136aea105622b279ed7ab622840ee0635fe36b623fcb1e"
+  },
+  {
+    "path": ".agents/skills/sssf/apps/visualizer/tsconfig.json",
+    "source": "/home/user/VS/factories/sssf/.claude/skills/sssf/apps/visualizer/tsconfig.json",
+    "sha256": "d5f7224210d24bcb598588d6354d8d31f8522bad51c639f7843afcb4a88ef23e"
+  },
+  {
+    "path": ".agents/skills/sssf/apps/visualizer/vite.config.ts",
+    "source": "/home/user/VS/factories/sssf/.claude/skills/sssf/apps/visualizer/vite.config.ts",
+    "sha256": "21d8fa3a20fed1c16437ebc61b707c889abaabf051bd0581127bed0b24a022c6"
+  },
+  {
+    "path": ".agents/skills/sssf/cookbooks/create_adw.md",
+    "source": "/home/user/VS/factories/sssf/.claude/skills/sssf/cookbooks/create_adw.md",
+    "sha256": "711a0bde7bc16bff023f176205ee7d40ed687b903bc96e9e101a070488dbd3a7"
+  },
+  {
+    "path": ".agents/skills/sssf/cookbooks/create_config.md",
+    "source": "/home/user/VS/factories/sssf/.claude/skills/sssf/cookbooks/create_config.md",
+    "sha256": "613f7cfafc9509bef6fa50c9cc080f64b3fb02d176bf83dced0d04200fb8544b"
+  },
+  {
+    "path": ".agents/skills/sssf/cookbooks/how_to_prompt_for_the_eng.md",
+    "source": "/home/user/VS/factories/sssf/.claude/skills/sssf/cookbooks/how_to_prompt_for_the_eng.md",
+    "sha256": "9b13dbeea0f16c27f8bc52e7a940352a890624109ca95bf571e7a923cd5ac180"
+  },
+  {
+    "path": ".agents/skills/sssf/cookbooks/install.md",
+    "source": "/home/user/VS/factories/sssf/.claude/skills/sssf/cookbooks/install.md",
+    "sha256": "421b579ad8909c4361ddc299a111121b421bba4fab7136573afbdf1ee77b8b15"
+  },
+  {
+    "path": ".agents/skills/sssf/cookbooks/run_adw.md",
+    "source": "/home/user/VS/factories/sssf/.claude/skills/sssf/cookbooks/run_adw.md",
+    "sha256": "9485abedb156f0558642df3c1cecd699e9efda4439e0366746458784924a4a04"
+  },
+  {
+    "path": ".agents/skills/sssf/cookbooks/sssf_overview.md",
+    "source": "/home/user/VS/factories/sssf/.claude/skills/sssf/cookbooks/sssf_overview.md",
+    "sha256": "3458f5b5ff7e4ce0e34cce3176ce42ee4e62c9625460df69e9c545fbd112835b"
+  },
+  {
+    "path": ".agents/skills/sssf/cookbooks/update_adw.md",
+    "source": "/home/user/VS/factories/sssf/.claude/skills/sssf/cookbooks/update_adw.md",
+    "sha256": "a38a387e87af1424d995f4b2764db5316b3ba9d6222272a49397a7c97e53c45a"
+  },
+  {
+    "path": ".agents/skills/sssf/cookbooks/update_config.md",
+    "source": "/home/user/VS/factories/sssf/.claude/skills/sssf/cookbooks/update_config.md",
+    "sha256": "025ae9043295a33cba0689e1b6a114550920998a811981cf62cc31184cd2dbc0"
+  },
+  {
+    "path": ".agents/skills/sssf/cookbooks/update_modules.md",
+    "source": "/home/user/VS/factories/sssf/.claude/skills/sssf/cookbooks/update_modules.md",
+    "sha256": "e0da5a8a4b1244809354ccbfe77959487c2e87fc5c2933a4d04c937b6e88408a"
+  },
+  {
+    "path": ".agents/skills/sssf/references/config.md",
+    "source": "/home/user/VS/factories/sssf/.claude/skills/sssf/references/config.md",
+    "sha256": "9f7da4049be83f6edff3fb9e22147f220d32b3051b4a4db1ec3d7aeac3b84389"
+  },
+  {
+    "path": ".agents/skills/sssf/references/handoff.md",
+    "source": "/home/user/VS/factories/sssf/.claude/skills/sssf/references/handoff.md",
+    "sha256": "b1d4f76fa74990f8f9b25e862e1990a0c58ab362374708c1280074b85f444c8f"
+  },
+  {
+    "path": ".agents/skills/sssf/references/observability.md",
+    "source": "/home/user/VS/factories/sssf/.claude/skills/sssf/references/observability.md",
+    "sha256": "e0514e61198f9d787cac79e3a0d7812614626a6b09b45d9c92cbe429a5c7188d"
+  },
+  {
+    "path": ".agents/skills/sssf/scripts/.ruff_cache/.gitignore",
+    "source": "/home/user/VS/factories/sssf/.claude/skills/sssf/scripts/.ruff_cache/.gitignore",
+    "sha256": "9e3a60f1e6ec4ae60215c11d54b171392745ec25e9dded433d5bd921363af316"
+  },
+  {
+    "path": ".agents/skills/sssf/scripts/.ruff_cache/0.16.2/13772447456860759351",
+    "source": "/home/user/VS/factories/sssf/.claude/skills/sssf/scripts/.ruff_cache/0.16.2/13772447456860759351",
+    "sha256": "e6d08f61f207b65a08033bda009f54426c4528afbd32ff9910b4f7b355223bf8"
+  },
+  {
+    "path": ".agents/skills/sssf/scripts/.ruff_cache/CACHEDIR.TAG",
+    "source": "/home/user/VS/factories/sssf/.claude/skills/sssf/scripts/.ruff_cache/CACHEDIR.TAG",
+    "sha256": "5953156d7e0c564a427251316eaf26f8870e6483ae2197f916b630e4f93e31ae"
+  },
+  {
+    "path": ".agents/skills/sssf/scripts/go.py",
+    "source": "/home/user/VS/factories/sssf/.claude/skills/sssf/scripts/go.py",
+    "sha256": "f16ae86a5e0b60a6f3f52c2c6cbbda88b64c63470f4bcf951c176a5102a333c3"
+  },
+  {
+    "path": ".agents/skills/sssf/scripts/install.py",
+    "source": "/home/user/VS/factories/sssf/.claude/skills/sssf/scripts/install.py",
+    "sha256": "775dc52250bc9dd7bc9aa4298417ca136d7666527758d93d4b8cfbdff67bdc0b"
+  },
+  {
+    "path": ".agents/skills/sssf/scripts/make_adw.py",
+    "source": "/home/user/VS/factories/sssf/.claude/skills/sssf/scripts/make_adw.py",
+    "sha256": "4233f2494dc06b43365a59dfe377ccebcfff22def005442a498fa2f16d8128af"
+  },
+  {
+    "path": ".agents/skills/sssf/scripts/make_config.py",
+    "source": "/home/user/VS/factories/sssf/.claude/skills/sssf/scripts/make_config.py",
+    "sha256": "2fb366f548c369c1f5ce5521182e7cd8f9ce89098404b1e3a82ba62e5adb8bea"
+  },
+  {
+    "path": ".agents/skills/sssf/scripts/services.py",
+    "source": "/home/user/VS/factories/sssf/.claude/skills/sssf/scripts/services.py",
+    "sha256": "9f72d15d8892fc1239ae448602006fd49ca82ae327b440459ec44f60fae59df5"
+  },
+  {
+    "path": ".agents/skills/sssf/scripts/sync.py",
+    "source": "/home/user/VS/factories/sssf/.claude/skills/sssf/scripts/sync.py",
+    "sha256": "c527ecc41498e0006fdd60a859e91c85ff50fbb15ff3e1f914cb653163ab0424"
+  },
+  {
+    "path": ".agents/skills/sssf/scripts/tailnet-authorities.sh",
+    "source": "/home/user/VS/factories/sssf/.claude/skills/sssf/scripts/tailnet-authorities.sh",
+    "sha256": "72ce829fdb7efda18db812c92269480b9b277e5ba058f154e61d171f3daccde5"
+  },
+  {
+    "path": ".agents/skills/sssf/scripts/uninstall.py",
+    "source": "/home/user/VS/factories/sssf/.claude/skills/sssf/scripts/uninstall.py",
+    "sha256": "9840b4c3ceff2ba58529491b61d8aa81ec2d914b489cfe02d687cdd6569851d1"
+  },
+  {
+    "path": ".agents/skills/sssf/templates/adw_fusion_plan.py",
+    "source": "/home/user/VS/factories/sssf/.claude/skills/sssf/templates/adw_fusion_plan.py",
+    "sha256": "83c8475f4d87163579f9cf7f241f24ec1cfa516d891e08033b729b0982dbb1a5"
+  },
+  {
+    "path": ".agents/skills/sssf/templates/adws/adw_build.py",
+    "source": "/home/user/VS/factories/sssf/.claude/skills/sssf/templates/adws/adw_build.py",
+    "sha256": "d6be4a09e536b1556beb724971e48aca1192e6d13d173a86452e209a8a891c17"
+  },
+  {
+    "path": ".agents/skills/sssf/templates/adws/adw_build_review.py",
+    "source": "/home/user/VS/factories/sssf/.claude/skills/sssf/templates/adws/adw_build_review.py",
+    "sha256": "42bd52b07c79c67dca45c8c2a23a7e09c860e83895b53838cef9adc3ddc13bcd"
+  },
+  {
+    "path": ".agents/skills/sssf/templates/adws/adw_build_test.py",
+    "source": "/home/user/VS/factories/sssf/.claude/skills/sssf/templates/adws/adw_build_test.py",
+    "sha256": "44d73734d74824e0940b3b8e4672a7708b4be632fe7f4cff9d7347e2d6ae4eaf"
+  },
+  {
+    "path": ".agents/skills/sssf/templates/adws/adw_document.py",
+    "source": "/home/user/VS/factories/sssf/.claude/skills/sssf/templates/adws/adw_document.py",
+    "sha256": "93d19712f4bd9120d44fb265809d403087a712414eceb68673bab43e0ca8372a"
+  },
+  {
+    "path": ".agents/skills/sssf/templates/adws/adw_fusion_plan.py",
+    "source": "/home/user/VS/factories/sssf/.claude/skills/sssf/templates/adws/adw_fusion_plan.py",
+    "sha256": "8aa668f6198b1a2d2b253c7b8a37a76d713d734027d03c806011aebed6f7fbbd"
+  },
+  {
+    "path": ".agents/skills/sssf/templates/adws/adw_fusion_sdlc.py",
+    "source": "/home/user/VS/factories/sssf/.claude/skills/sssf/templates/adws/adw_fusion_sdlc.py",
+    "sha256": "f754996ab4b613b2bb89a0a54755090342fc0f0d3ebaa0511b6c35ab0025976e"
+  },
+  {
+    "path": ".agents/skills/sssf/templates/adws/adw_modules/__init__.py",
+    "source": "/home/user/VS/factories/sssf/.claude/skills/sssf/templates/adws/adw_modules/__init__.py",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "path": ".agents/skills/sssf/templates/adws/adw_modules/agent_cc.py",
+    "source": "/home/user/VS/factories/sssf/.claude/skills/sssf/templates/adws/adw_modules/agent_cc.py",
+    "sha256": "8e2dbc70258eda8f63612bdeb94522911fd632d000ea0e3cbff8f7ba35059d63"
+  },
+  {
+    "path": ".agents/skills/sssf/templates/adws/adw_modules/agent_pi.py",
+    "source": "/home/user/VS/factories/sssf/.claude/skills/sssf/templates/adws/adw_modules/agent_pi.py",
+    "sha256": "f68d5f0bc73ffca60d26c40924c748bfc5d3f0b29eb463cd22b318451c0e4fa6"
+  },
+  {
+    "path": ".agents/skills/sssf/templates/adws/adw_modules/agents.py",
+    "source": "/home/user/VS/factories/sssf/.claude/skills/sssf/templates/adws/adw_modules/agents.py",
+    "sha256": "d74674302b67048ee00d0fc05a3e0c9bb92b87f57b9e8276c69a1e95d5792c3d"
+  },
+  {
+    "path": ".agents/skills/sssf/templates/adws/adw_modules/changes.py",
+    "source": "/home/user/VS/factories/sssf/.claude/skills/sssf/templates/adws/adw_modules/changes.py",
+    "sha256": "2c0d79c551e812415cc82bec27d61f8ad0fd92b0bfb5b35549350c348318f4c8"
+  },
+  {
+    "path": ".agents/skills/sssf/templates/adws/adw_modules/console.py",
+    "source": "/home/user/VS/factories/sssf/.claude/skills/sssf/templates/adws/adw_modules/console.py",
+    "sha256": "a4750f5f243099957da4621dc26f0cb842be334bb841b36c0c67430c16ded221"
+  },
+  {
+    "path": ".agents/skills/sssf/templates/adws/adw_modules/data_types.py",
+    "source": "/home/user/VS/factories/sssf/.claude/skills/sssf/templates/adws/adw_modules/data_types.py",
+    "sha256": "c90d0e808ee3eabc99c19f784b3736697f35a8fcc3e6ad9b21be192992fd3871"
+  },
+  {
+    "path": ".agents/skills/sssf/templates/adws/adw_modules/fusion.py",
+    "source": "/home/user/VS/factories/sssf/.claude/skills/sssf/templates/adws/adw_modules/fusion.py",
+    "sha256": "e4710ee8f613b958195d9a3610c4c9c3289586cc01c06664fb6446ebccdcb3d6"
+  },
+  {
+    "path": ".agents/skills/sssf/templates/adws/adw_modules/fusion_recovery.py",
+    "source": "/home/user/VS/factories/sssf/.claude/skills/sssf/templates/adws/adw_modules/fusion_recovery.py",
+    "sha256": "fc3eef840e02787bbf7a6958e7385d827c03a2b53acd85a47e8a3af4f86d75e6"
+  },
+  {
+    "path": ".agents/skills/sssf/templates/adws/adw_modules/gates.py",
+    "source": "/home/user/VS/factories/sssf/.claude/skills/sssf/templates/adws/adw_modules/gates.py",
+    "sha256": "0a3af6f093dcda9baa3aca53ac39c7200486b47beda2dd19dcbf2bfadd86e245"
+  },
+  {
+    "path": ".agents/skills/sssf/templates/adws/adw_modules/git_helper.py",
+    "source": "/home/user/VS/factories/sssf/.claude/skills/sssf/templates/adws/adw_modules/git_helper.py",
+    "sha256": "ea3e5fa959c37bc258e4ded8f3bae53ca7a13ed2a64355202bf6765924c062d7"
+  },
+  {
+    "path": ".agents/skills/sssf/templates/adws/adw_modules/mutations.py",
+    "source": "/home/user/VS/factories/sssf/.claude/skills/sssf/templates/adws/adw_modules/mutations.py",
+    "sha256": "1cf65f411df6da2f9fdce844240e0cac908e694503f8c196afe60c2a2bbb6523"
+  },
+  {
+    "path": ".agents/skills/sssf/templates/adws/adw_modules/permissions.py",
+    "source": "/home/user/VS/factories/sssf/.claude/skills/sssf/templates/adws/adw_modules/permissions.py",
+    "sha256": "35724b40b0bbf1af350958154d02777bc0e176bbadceba2241f4a8dc5ec8bae5"
+  },
+  {
+    "path": ".agents/skills/sssf/templates/adws/adw_modules/prompts.py",
+    "source": "/home/user/VS/factories/sssf/.claude/skills/sssf/templates/adws/adw_modules/prompts.py",
+    "sha256": "443f5065b36971ca7da05a85c3c8d989702b3cbe79829126b85881099dcd40b3"
+  },
+  {
+    "path": ".agents/skills/sssf/templates/adws/adw_modules/quality.py",
+    "source": "/home/user/VS/factories/sssf/.claude/skills/sssf/templates/adws/adw_modules/quality.py",
+    "sha256": "8a52df9775372d70a727e6056570a6365c8d489c8d8d94e5f000c705570b766a"
+  },
+  {
+    "path": ".agents/skills/sssf/templates/adws/adw_modules/runner.py",
+    "source": "/home/user/VS/factories/sssf/.claude/skills/sssf/templates/adws/adw_modules/runner.py",
+    "sha256": "cc1f42d255ea5f4e1365965594df577b1393aea04c31ea0ed39d68f810e3bca2"
+  },
+  {
+    "path": ".agents/skills/sssf/templates/adws/adw_modules/session.py",
+    "source": "/home/user/VS/factories/sssf/.claude/skills/sssf/templates/adws/adw_modules/session.py",
+    "sha256": "ebb764a4706c0ebd7f3d0ee5a780bb606e80553acbd4ed961f3e33a71ffaf117"
+  },
+  {
+    "path": ".agents/skills/sssf/templates/adws/adw_modules/tracer.py",
+    "source": "/home/user/VS/factories/sssf/.claude/skills/sssf/templates/adws/adw_modules/tracer.py",
+    "sha256": "bf2f4fe63c5b85ce0b9c89641d484b496edef9c60977792430f39848e36c988e"
+  },
+  {
+    "path": ".agents/skills/sssf/templates/adws/adw_modules/utils.py",
+    "source": "/home/user/VS/factories/sssf/.claude/skills/sssf/templates/adws/adw_modules/utils.py",
+    "sha256": "042510862c882c6631db29800dced9b30b9c32444110e6ee4d3d32faf3b1369d"
+  },
+  {
+    "path": ".agents/skills/sssf/templates/adws/adw_plan.py",
+    "source": "/home/user/VS/factories/sssf/.claude/skills/sssf/templates/adws/adw_plan.py",
+    "sha256": "9efcdf99a71e53b9da2a29b245ef5e4ccd1a90403248730e0aa3b5f27128ebd1"
+  },
+  {
+    "path": ".agents/skills/sssf/templates/adws/adw_plan_build.py",
+    "source": "/home/user/VS/factories/sssf/.claude/skills/sssf/templates/adws/adw_plan_build.py",
+    "sha256": "d3298b9039521d9aeedd7e419c917ed4071c17658ec9885720f91a1664603aa1"
+  },
+  {
+    "path": ".agents/skills/sssf/templates/adws/adw_plan_build_test.py",
+    "source": "/home/user/VS/factories/sssf/.claude/skills/sssf/templates/adws/adw_plan_build_test.py",
+    "sha256": "0c78ae50957c3b31c6322be3a4047f0879a68d7da36c9468de25cbdd6032ccd1"
+  },
+  {
+    "path": ".agents/skills/sssf/templates/adws/adw_plan_build_test_quality.py",
+    "source": "/home/user/VS/factories/sssf/.claude/skills/sssf/templates/adws/adw_plan_build_test_quality.py",
+    "sha256": "09904bee7842a795f68f855b3070860efa4ca0b0ae408df7be6ec95393d692e2"
+  },
+  {
+    "path": ".agents/skills/sssf/templates/adws/adw_prompt.py",
+    "source": "/home/user/VS/factories/sssf/.claude/skills/sssf/templates/adws/adw_prompt.py",
+    "sha256": "590111efaf8012c5e5bbc4b641df124842dcfb6002b0495801d48198d25da202"
+  },
+  {
+    "path": ".agents/skills/sssf/templates/adws/adw_quality.py",
+    "source": "/home/user/VS/factories/sssf/.claude/skills/sssf/templates/adws/adw_quality.py",
+    "sha256": "774a51628f615b54bd7b9e0830e384cb8ebb586005ea578156f1aa9607e1593f"
+  },
+  {
+    "path": ".agents/skills/sssf/templates/adws/adw_scout.py",
+    "source": "/home/user/VS/factories/sssf/.claude/skills/sssf/templates/adws/adw_scout.py",
+    "sha256": "1e32c8026af8a8ac7bd3ca39b265d217ecc6d7177e392f2a7ef58942187e5059"
+  },
+  {
+    "path": ".agents/skills/sssf/templates/adws/adw_simple_sdlc.py",
+    "source": "/home/user/VS/factories/sssf/.claude/skills/sssf/templates/adws/adw_simple_sdlc.py",
+    "sha256": "bfdef29d5501a04f0519b7e281b9d9ef90e11b7224c91d71e248d4cf5d3c76f2"
+  },
+  {
+    "path": ".agents/skills/sssf/templates/adws/adw_swarm.py",
+    "source": "/home/user/VS/factories/sssf/.claude/skills/sssf/templates/adws/adw_swarm.py",
+    "sha256": "4db8a1b0753c0d0c8eae34be5a201f7dc25783cbf5b2adf1e1af89132eb76288"
+  },
+  {
+    "path": ".agents/skills/sssf/templates/adws/conftest.py",
+    "source": "/home/user/VS/factories/sssf/.claude/skills/sssf/templates/adws/conftest.py",
+    "sha256": "f617378c46ce72f2d260079958d24ec6c1f11b68c19ee5d1d8c938993ab30f81"
+  },
+  {
+    "path": ".agents/skills/sssf/templates/dsh-preset/agent.cordis.yml",
+    "source": "/home/user/VS/factories/sssf/.claude/skills/sssf/templates/dsh-preset/agent.cordis.yml",
+    "sha256": "af8d107f4f62f90893f6d17d399f639d9ab745731e995f9aaf57a777e8a3767e"
+  },
+  {
+    "path": ".agents/skills/sssf/templates/dsh-preset/package.json",
+    "source": "/home/user/VS/factories/sssf/.claude/skills/sssf/templates/dsh-preset/package.json",
+    "sha256": "5a065fe7d8eab2a582f428e11c2ea63aaf70607a54f69cfd5c711b5c53d91b32"
+  },
+  {
+    "path": ".agents/skills/sssf/templates/dsh-preset/preset.yml",
+    "source": "/home/user/VS/factories/sssf/.claude/skills/sssf/templates/dsh-preset/preset.yml",
+    "sha256": "d5da44ec597210fcf8b69a791cbe6fd192449f08079f9274b7f1e38405f291d8"
+  },
+  {
+    "path": ".agents/skills/sssf/templates/dsh-preset/tool-sssf-docs.js",
+    "source": "/home/user/VS/factories/sssf/.claude/skills/sssf/templates/dsh-preset/tool-sssf-docs.js",
+    "sha256": "b2610265516df6bfdf8fb77c4f14b79b1f6abc49a448c02f3b0dabc3f0db4c5c"
+  },
+  {
+    "path": ".agents/skills/sssf/templates/dsh-preset/tool-sssf.js",
+    "source": "/home/user/VS/factories/sssf/.claude/skills/sssf/templates/dsh-preset/tool-sssf.js",
+    "sha256": "039b7844eb6046e3d34cddab1d251a9d969b1684f0e83905d29908efc9b3dc7a"
+  },
+  {
+    "path": ".agents/skills/sssf/templates/env.sample",
+    "source": "/home/user/VS/factories/sssf/.claude/skills/sssf/templates/env.sample",
+    "sha256": "680cf844060b6b24fcd8693bdd11e4d54a70346d3e65de296362d6308bdd5021"
+  },
+  {
+    "path": ".agents/skills/sssf/templates/harness_engineering/graphify_query.ts",
+    "source": "/home/user/VS/factories/sssf/.claude/skills/sssf/templates/harness_engineering/graphify_query.ts",
+    "sha256": "996ebc01e485c2211c7ae67ba77c1b88d609a6a0526534f9e6fb3590d5a80914"
+  },
+  {
+    "path": ".agents/skills/sssf/templates/harness_engineering/subagents.ts",
+    "source": "/home/user/VS/factories/sssf/.claude/skills/sssf/templates/harness_engineering/subagents.ts",
+    "sha256": "6f5a01145cde8f1d3a31d0c65da53aa06da54ce382ccc97d5d9685f05740ed17"
+  },
+  {
+    "path": ".agents/skills/sssf/templates/harness_engineering/themeMap.ts",
+    "source": "/home/user/VS/factories/sssf/.claude/skills/sssf/templates/harness_engineering/themeMap.ts",
+    "sha256": "827dfc100c7ce666d650b31542e03c047deee6543a2979f071ddc78d4531cd8b"
+  },
+  {
+    "path": ".agents/skills/sssf/templates/justfile",
+    "source": "/home/user/VS/factories/sssf/.claude/skills/sssf/templates/justfile",
+    "sha256": "eb81888ceef4d36c22233a6ea15c176a4352de714bf1c328c97f1a2314548643"
+  },
+  {
+    "path": ".agents/skills/sssf/templates/prompt_engineering/builder/system.md",
+    "source": "/home/user/VS/factories/sssf/.claude/skills/sssf/templates/prompt_engineering/builder/system.md",
+    "sha256": "b18a7c426a3fbb680a1e6f0a22769391059b69e7f665eb6ae5f45ae725a7492c"
+  },
+  {
+    "path": ".agents/skills/sssf/templates/prompt_engineering/builder/user.md",
+    "source": "/home/user/VS/factories/sssf/.claude/skills/sssf/templates/prompt_engineering/builder/user.md",
+    "sha256": "08c2fc3f54ab051a140afb2f24045a82a83fde3a423362b247a43d17f9a898de"
+  },
+  {
+    "path": ".agents/skills/sssf/templates/prompt_engineering/documenter/system.md",
+    "source": "/home/user/VS/factories/sssf/.claude/skills/sssf/templates/prompt_engineering/documenter/system.md",
+    "sha256": "6a9ef78af751e4e33391dfbf003c9879c3779403d16ec62e4520aa4a52d89af7"
+  },
+  {
+    "path": ".agents/skills/sssf/templates/prompt_engineering/documenter/user.md",
+    "source": "/home/user/VS/factories/sssf/.claude/skills/sssf/templates/prompt_engineering/documenter/user.md",
+    "sha256": "c18b6766262ae0534df17be01480602e5338655eb71220fcc13f8606c5c32b93"
+  },
+  {
+    "path": ".agents/skills/sssf/templates/prompt_engineering/fusion/opinion.md",
+    "source": "/home/user/VS/factories/sssf/.claude/skills/sssf/templates/prompt_engineering/fusion/opinion.md",
+    "sha256": "5ab4a69770ad4c443599ccdbe0b23e52ea4a329ac4a13da5c813ec412f91167f"
+  },
+  {
+    "path": ".agents/skills/sssf/templates/prompt_engineering/fusion/synthesis.md",
+    "source": "/home/user/VS/factories/sssf/.claude/skills/sssf/templates/prompt_engineering/fusion/synthesis.md",
+    "sha256": "9f52b304cde78e70e0ef7e890743bbc42915a37ca9ea4eb73f8cf0e2b63a1a5b"
+  },
+  {
+    "path": ".agents/skills/sssf/templates/prompt_engineering/fusion/system.md",
+    "source": "/home/user/VS/factories/sssf/.claude/skills/sssf/templates/prompt_engineering/fusion/system.md",
+    "sha256": "b9c88b70f2cbb46eba41cec9f61b3799b4803c99e116f0cba87bcebcdbaf4e94"
+  },
+  {
+    "path": ".agents/skills/sssf/templates/prompt_engineering/fusion/vote.md",
+    "source": "/home/user/VS/factories/sssf/.claude/skills/sssf/templates/prompt_engineering/fusion/vote.md",
+    "sha256": "56828dac02cbb068171b91c386cfdd56d9f8a57fa7a2067eeb0c9837d10aa226"
+  },
+  {
+    "path": ".agents/skills/sssf/templates/prompt_engineering/planner/system.md",
+    "source": "/home/user/VS/factories/sssf/.claude/skills/sssf/templates/prompt_engineering/planner/system.md",
+    "sha256": "e1b05948fbb48b76241a5f363cb8876d6433d90428eca28bc30384be22251a46"
+  },
+  {
+    "path": ".agents/skills/sssf/templates/prompt_engineering/planner/user.md",
+    "source": "/home/user/VS/factories/sssf/.claude/skills/sssf/templates/prompt_engineering/planner/user.md",
+    "sha256": "c924faf5b8d03bc4d239720ce5652eb969ca5e83febb588d5b28b953e7158369"
+  },
+  {
+    "path": ".agents/skills/sssf/templates/prompt_engineering/reviewer/system.md",
+    "source": "/home/user/VS/factories/sssf/.claude/skills/sssf/templates/prompt_engineering/reviewer/system.md",
+    "sha256": "8e4d07715bf8cf2278c7454dd6ecd8fec2c70233e9b231fe2df03d2c794a7739"
+  },
+  {
+    "path": ".agents/skills/sssf/templates/prompt_engineering/reviewer/user.md",
+    "source": "/home/user/VS/factories/sssf/.claude/skills/sssf/templates/prompt_engineering/reviewer/user.md",
+    "sha256": "65d89b1ab7b55d8b0250a64407ec6eb38d39de02d2fe17f537d2495714aa4b22"
+  },
+  {
+    "path": ".agents/skills/sssf/templates/prompt_engineering/scout/system.md",
+    "source": "/home/user/VS/factories/sssf/.claude/skills/sssf/templates/prompt_engineering/scout/system.md",
+    "sha256": "0bb40d263375a1a16e72800ef472e5c372316b0c165795a80b3b1f5e2afcf30c"
+  },
+  {
+    "path": ".agents/skills/sssf/templates/prompt_engineering/scout/user.md",
+    "source": "/home/user/VS/factories/sssf/.claude/skills/sssf/templates/prompt_engineering/scout/user.md",
+    "sha256": "54d7114b9ee00e4cf8b8495a2b52a2e7840625653adab27d0d38e4c75c439063"
+  },
+  {
+    "path": ".agents/skills/sssf/templates/prompt_engineering/test_reviewer/system.md",
+    "source": "/home/user/VS/factories/sssf/.claude/skills/sssf/templates/prompt_engineering/test_reviewer/system.md",
+    "sha256": "a1bdf776d7f312b07f0c4f0daf23be9102c21484d47c7f21b4b201f8970609d2"
+  },
+  {
+    "path": ".agents/skills/sssf/templates/prompt_engineering/test_reviewer/user.md",
+    "source": "/home/user/VS/factories/sssf/.claude/skills/sssf/templates/prompt_engineering/test_reviewer/user.md",
+    "sha256": "5722a11303ee10ab4c1740b1d72695772a45de4113c8676fc9e059a9885c77c5"
+  },
+  {
+    "path": ".agents/skills/sssf/templates/prompt_engineering/test_writer/system.md",
+    "source": "/home/user/VS/factories/sssf/.claude/skills/sssf/templates/prompt_engineering/test_writer/system.md",
+    "sha256": "042d18a362dda6823a0301841cd09f738e18f6910f112435be77cfa19aa2c057"
+  },
+  {
+    "path": ".agents/skills/sssf/templates/prompt_engineering/test_writer/user.md",
+    "source": "/home/user/VS/factories/sssf/.claude/skills/sssf/templates/prompt_engineering/test_writer/user.md",
+    "sha256": "9912f4402e3e8a4520c5eca2c43bfb6b7ff8d8f3b660d6b77b2de085791f9d6a"
+  },
+  {
+    "path": ".agents/skills/sssf/templates/sssf.config.yaml",
+    "source": "/home/user/VS/factories/sssf/.claude/skills/sssf/templates/sssf.config.yaml",
+    "sha256": "ec6a069dcf4abd3838bc7905b22297a7c5b3b7019df00ec860be980a5feb995f"
+  },
+  {
+    "path": ".agents/skills/sssf/templates/systemd/dsh-web.service",
+    "source": "/home/user/VS/factories/sssf/.claude/skills/sssf/templates/systemd/dsh-web.service",
+    "sha256": "b4082b06764f493afe3f9115ce2a30e8f9e459f82ccf68c6787a536478ed1ceb"
+  },
+  {
+    "path": ".agents/skills/sssf/templates/systemd/omniroute.service",
+    "source": "/home/user/VS/factories/sssf/.claude/skills/sssf/templates/systemd/omniroute.service",
+    "sha256": "047f94de0013bdcd919f26a464d4f82c5c7450e994a725047093353f4a2d2868"
+  },
+  {
+    "path": ".agents/skills/sssf/templates/systemd/sslf-api.service",
+    "source": "/home/user/VS/factories/sssf/.claude/skills/sssf/templates/systemd/sslf-api.service",
+    "sha256": "fc721cc1ba5cdab03b37927515578f54dfe064ae4c4503b72cde1a5a162c06b8"
+  },
+  {
+    "path": ".agents/skills/sssf/templates/systemd/sslf-web.service",
+    "source": "/home/user/VS/factories/sssf/.claude/skills/sssf/templates/systemd/sslf-web.service",
+    "sha256": "03fbce42871c13b0e3da2bb68c5b40c8d8b8893b1ce24a8912cbe2bb40825535"
+  },
+  {
+    "path": ".agents/skills/sssf/templates/systemd/sssf-visualizer.service",
+    "source": "/home/user/VS/factories/sssf/.claude/skills/sssf/templates/systemd/sssf-visualizer.service",
+    "sha256": "7401e38db3c5bc14dc1d695ef514fa853d70f1c255f3dfb3d4c43df6d910c041"
+  },
+  {
+    "path": ".agents/workflows/autoresearch-start.md",
+    "source": "/home/user/VS/agentic-environment/autoresearch-start.md",
+    "sha256": "bdcede5f795b7c55e7c7c41ff51c757fff0856b3e51c2e7bbc1e6ee703cf5fff"
+  },
+  {
+    "path": ".agents/workflows/create-experiment.md",
+    "source": "/home/user/VS/agentic-environment/create-experiment.md",
+    "sha256": "4e2a8da21126b6052cb22d8038cd357a58e7d4e420bad70f9c3a3752e7b5ff58"
+  },
+  {
+    "path": ".agents/workflows/project-development-start.md",
+    "source": "/home/user/VS/agentic-environment/project-development-start.md",
+    "sha256": "3ad7047d48513080caef1ca9d047700a626d6b93cc310b742c887dba69471ce4"
+  }
+]

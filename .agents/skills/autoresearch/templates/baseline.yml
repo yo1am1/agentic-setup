@@ -1,0 +1,3 @@
+# First config. Document every key with a comment.
+key: value      # what this controls
+description: "baseline — <brief description>"

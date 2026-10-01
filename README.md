@@ -1,36 +1,44 @@
 # Agentic setup
 
-Portable guardrails, context rules, skills and sequential workflows distilled from
-my coding-agent environment. By [Yehor Trepalin](https://github.com/yo1am1).
+My actual coding-agent skills and workflows, exported from the setup I use.
+By [Yehor Trepalin](https://github.com/yo1am1).
+
+| Skill | What it does | Runtime |
+| --- | --- | --- |
+| [autoresearch](.agents/skills/autoresearch/SKILL.md) | Create experiments; run or continue champion-based loops; retain failures; optional MLflow | Coding agent + uv + experiment dependencies |
+| [council](.agents/skills/council/SKILL.md) | Independent anonymous research, lossless fusion, hash-acknowledged voting and debate | Herdr session, selected agent CLIs; caveman skill unless plain style is selected |
+| [sssf](.agents/skills/sssf/SKILL.md) | Operate deterministic software-factory workflows, typed outputs, gates, retries and traces | Full SSSF engine checkout; pi; configured providers |
+| [factory-commands](.agents/skills/factory-commands/SKILL.md) | Explain global/per-project just recipes, costs, writes and session chaining | Existing factory and its justfiles |
+
+The instructions, references, templates and supporting scripts are preserved from
+installed sources, not rewritten as shorter substitute skills. Older entry-point
+workflows are preserved in [.agents/workflows](.agents/workflows).
 
 ## Use
 
-Inspect before copying. Merge selected .agents/ content into your project without
-overwriting existing instructions. Link relevant rules and workflows from its
-AGENTS.md; hosts differ in automatic discovery. Skills use SKILL.md frontmatter;
-rules and workflows are ordinary Markdown. Nothing installs global hooks or changes
-provider configuration.
+Copy selected skill directories into your host's skill search path. Check its
+instructions and required runtimes before invoking it. Codex discovers project
+skills under `.agents/skills`; Claude Code can use selected directories under
+`.claude/skills`. Do not overwrite existing skills blindly.
 
-| Skill | Purpose |
-| --- | --- |
-| [fusion](.agents/skills/fusion/SKILL.md) | Independent proposals, critique, synthesis and exact-plan voting |
-| [research-start](.agents/skills/research-start/SKILL.md) | Fixed evaluation, baseline and bounded trials |
-| [research-continue](.agents/skills/research-continue/SKILL.md) | Recover champion without erasing negative results |
-| [sequential-agents](.agents/skills/sequential-agents/SKILL.md) | Plan, independent tests, implementation, checks and review |
+`autoresearch` is self-contained as an instruction/template bundle. `council`
+requires Herdr and its CLI integrations, including the installed caveman skill for
+the default style; choose `style=plain` if that skill is unavailable.
 
-Read [guardrails](.agents/rules/guardrails.md) and [context handoffs](.agents/rules/context.md).
-[Autoresearcher](https://github.com/yo1am1/autoresearcher) provides runnable examples.
+The SSSF export is a source snapshot for inspecting my setup, **not a standalone
+factory installation**. Its installer expects the full engine's `adws/`, rosters,
+prompts and justfile; this repository does not contain that engine. Its own
+runtime requirements and permission boundaries remain documented in the skill.
+The factory-commands skill also records older recipes; use your engine's current
+justfile as the command authority.
 
-## Runtime boundaries
-
-Instructions do not launch agents, enforce an OS sandbox or guarantee correctness.
-They need a host supporting the requested tools. Herdr can manage persistent
-coding-agent terminals; a workflow engine can enforce gates. Neither is required
-to adapt this setup. My software factory is a separate implementation, not bundled here.
+## Verify the export
 
 ```sh
 make check
 ```
 
-Checks metadata and local links, not agent behavior. [Provenance](PROVENANCE.md)
-records inspiration.
+This checks metadata, the copied-file SHA-256 manifest and Python syntax. It does
+not launch agents or spend model tokens. [Provenance](PROVENANCE.md) records source
+paths, exclusions and runtime limitations. [Autoresearcher](https://github.com/yo1am1/autoresearcher)
+contains the research experiment.
