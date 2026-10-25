@@ -2083,8 +2083,12 @@
     "path": ".agents/rules/development.md",
     "source": "ai-agents-store@a13169d07ceed83f810f0009a53920c49881b71f/.agents/rules/development.md",
     "source_sha256": "b23e3ac0ceee7e486d35216f8494349f6d09420ec16e911205106c356d58b304",
-    "sha256": "b23e3ac0ceee7e486d35216f8494349f6d09420ec16e911205106c356d58b304",
-    "changes": []
+    "sha256": "5d0f1ad5ef736f9734f51e171de1c71a3d25159ff1891bb1f373eea88b8cd8fb",
+    "changes": [
+      {
+        "description": "Trim duplicate documentation and remove the automatic changelog requirement."
+      }
+    ]
   },
   {
     "path": ".agents/rules/safety.md",
@@ -2280,10 +2284,13 @@
     "path": "AGENTS.md",
     "source": "project-authored portable setup integration",
     "source_sha256": "48341449c8cfe0ecaf288ff6fe2a3ed3aa3f00660911d237202f22def8363fa0",
-    "sha256": "efacaf8a7c966bf6f392be1b01af9944962c94509e20b5d2fb48748df2d873db",
+    "sha256": "9987f3e1872e91bf25db76383a202fcdb7c2db6a377d467661581f2f9d907c32",
     "changes": [
       {
         "description": "Promote the portable environment to the main repository layout; preserve earlier instructions under library/."
+      },
+      {
+        "description": "Trim duplicate documentation and remove the automatic changelog requirement."
       }
     ]
   },
@@ -2316,21 +2323,13 @@
     "path": "README.md",
     "source": "project-authored portable setup integration",
     "source_sha256": "c2c47baae6fda8e153970b4e243147a598d47fe470ebd433c2a75a71d15a7b13",
-    "sha256": "222170200086adfdfa2b3391d1244a3d13a48755be3752fb4ecf95101f2666c3",
+    "sha256": "b57bc833e6fa9d6601aadbb6a592fe4442f8630fee743411362b5cb1c1834b35",
     "changes": [
       {
         "description": "Promote the portable environment to the main repository layout; preserve earlier instructions under library/."
-      }
-    ]
-  },
-  {
-    "path": "CHANGELOG.md",
-    "source": "project-authored integration",
-    "source_sha256": "6d3deb3ef5e03da60bb48003274237fe676c76f0cf853e9dfb06a8541002a060",
-    "sha256": "b49c50f1e7d543eea05cb0c0e68414ed6032adb46e640751afd13f0a7ef7b2c4",
-    "changes": [
+      },
       {
-        "description": "Verify that generated optional discovery copies remain untracked after promotion."
+        "description": "Trim duplicate documentation and remove the automatic changelog requirement."
       }
     ]
   },
@@ -2338,20 +2337,10 @@
     "path": "PROVENANCE.md",
     "source": "project-authored integration",
     "source_sha256": "984173a1a38629f540f74df0d83b5c8743f1a2b56b0ca39aee34f300a75de1b0",
-    "sha256": "984173a1a38629f540f74df0d83b5c8743f1a2b56b0ca39aee34f300a75de1b0",
-    "changes": []
-  },
-  {
-    "path": "VALIDATION.md",
-    "source": "project-authored integration",
-    "source_sha256": "b6d9a16f511674242e88be6572649d548e28afcbf558f5bc5412e980aa64a68c",
-    "sha256": "f779197c30255a4bb99f7a54e31bf99bdaa788721901b3c4d4ff6c9f29c1bf42",
+    "sha256": "a6e9f7b17f438946c618fe2c04f17ca98b83cd39ad9916b333e80f7fc3a5a3b6",
     "changes": [
       {
-        "description": "Record the observed main-environment validation results."
-      },
-      {
-        "description": "Verify that generated optional discovery copies remain untracked after promotion."
+        "description": "Trim duplicate documentation and remove the automatic changelog requirement."
       }
     ]
   },
@@ -2359,15 +2348,12 @@
     "path": "docs/demo.md",
     "source": "project-authored integration",
     "source_sha256": "752800ec51e7cd436b2e19819f6261439536f76b1d8e082e6769c3dc975fbfea",
-    "sha256": "752800ec51e7cd436b2e19819f6261439536f76b1d8e082e6769c3dc975fbfea",
-    "changes": []
-  },
-  {
-    "path": "docs/setup-story.md",
-    "source": "project-authored integration",
-    "source_sha256": "00a990d4c3ce751f43656f4fdfd8090696d9e699f4f993f59a3ebb55f0459f0e",
-    "sha256": "00a990d4c3ce751f43656f4fdfd8090696d9e699f4f993f59a3ebb55f0459f0e",
-    "changes": []
+    "sha256": "13f29bf22d1196bffa536a047a76d2aa4e4e2bcc912b0a7d2a9b3b8486d6a57e",
+    "changes": [
+      {
+        "description": "Trim duplicate documentation and remove the automatic changelog requirement."
+      }
+    ]
   },
   {
     "path": "library/.agents/README.md",

@@ -15,16 +15,8 @@
   staging or composing commits. Use Conventional Commits with a concise imperative
   subject. Message-only requests return a message; authorized commit requests
   continue through the commit.
-- Update root `CHANGELOG.md` in every commit. Read actual diffs and record
-  the final user-facing result, grouping related changes and naming any
-  required upgrade steps. Preserve released history and omit reversals,
-  implementation jargon and secrets. Use the `repo-changelog` skill.
-- Group changelog history by project version; keep new work under Unreleased.
-  Calculate the next version once per release from Conventional Commits and
-  surviving diffs since the last release or recorded baseline, not once per commit.
-  Before 1.0, features or breaking changes bump the minor version; fixes alone
-  bump the patch. Docs, tests and chores alone do not bump it. At 1.0 and above,
-  breaking changes bump the major version. Do not invent release tags or dates.
+- Update usage documentation when behavior changes. Use Git history for changes;
+  write release notes only when requested.
 - Run checks proportionate to the change. Environment installation does not run
   application checks; optional guardrail project checks require configuration.
 - Role prompts, policies and tool names do not enforce permission boundaries.
