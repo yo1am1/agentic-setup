@@ -1,38 +1,59 @@
-# Shared agent layer
+# Shared agent environment
 
-The canonical instruction library: full source-based rules, skills, workflows,
-role prompts and Fusion templates. Derived from the `.agents` layer I use in
-Gewgur, plus my installed personal skills. [Provenance](../PROVENANCE.md) records
-original hashes and every public-configuration replacement.
+Start with [Caveman](skills/caveman/SKILL.md) and [project-flow](skills/project-flow/SKILL.md).
+Brief planning and solo work are defaults. User instructions and existing authorization
+control scope. No skill, role or installer grants permission or installs other tools.
 
-- [rules](rules/) — 8 safety, Git, testing, agent, state, retrieval, prompt and observability guides.
-- [workflows](workflows/) — code change, debugging, review, Jira lifecycle and research entry points.
-- [skills](skills/) — task-specific capabilities, Caveman, Ponytail, autoresearch and Council/Fusion.
-- [agents](agents/) — investigator, code reviewer and four specialist evaluation roles.
-- [prompts](prompts/) — all 18 full engineering task/system templates, including Fusion.
-- [profiles/langgraph-backend.md](profiles/langgraph-backend.md) — the full backend project guide, with public placeholders.
-
-## Routing
-
-Use [code-change](workflows/code-change.md) for ordinary implementation,
-[debugging](workflows/debugging.md) for failures and [review](workflows/review.md)
-for a diff audit. Load the matching skill rather than every skill. Use
-[Fusion](workflows/fusion.md) for independent proposals and consensus; use
-[autoresearch](skills/autoresearch/SKILL.md) when a fixed metric can rank trials.
-Caveman controls communication; Ponytail controls implementation choices.
-Target-project conventions take precedence over generic style preferences.
-
-## Adapters
-
-`.agents` is the canonical source. `AGENTS.md` selects which guides apply to a
-project; plain rule/workflow Markdown is not automatically executed by every host.
+Before staging or composing commits, read [caveman-commit](skills/caveman-commit/SKILL.md).
+It supplies Conventional Commits message rules in both modes. For an authorized
+commit request, complete the commit; for a message-only request, return the message.
 
 ```sh
-make sync-agents
-uv run python scripts/sync_agent_adapters.py --check
+make ai          # show the two choices; installs nothing
+make ai simple   # default: core skills, no native roles
+make ai full     # opt-in: seven native roles and optional procedures
+make ai-test     # standard-library environment tests only
 ```
 
-The source-based generator produces Claude rules, full skill directories and
-role prompts, plus Cursor path-scoped rules. Generated copies are ignored in Git.
-Edit canonical files and regenerate. No global hooks or provider settings are
-installed. The instructions' external runtimes still need to exist in the host.
+No app dependencies, hooks, global settings or provider calls are part of installation.
+Read the selected host's STARTUP.md if present; a bare checkout defaults to simple.
+
+| Capability | Simple | Full |
+| --- | --- | --- |
+| Caveman + caveman-commit + project-flow | Yes | Yes |
+| Brief planning, solo execution | Default | Default |
+| Seven native roles | No | Available when useful |
+| Council, Herdr, Cavecrew, SpecsMD | Not discovered | Available; use only when useful and authorized |
+| Humanizer | Not discovered | Explicitly selected prose editing only |
+
+```text
+.agents/
+  README.md
+  agents/          seven role definitions, used by full
+  skills/          caveman/, caveman-commit/, project-flow/, project how-tos
+  optional/        council/, herdr/, cavecrew/, humanizer/, specsmd/, provenance
+  rules/           project safety and development rules
+  workflows/       optional procedures and existing project workflows
+  tools/           capability guides; never auto-install plugins
+  guardrails/      optional, uninstalled hooks; app checks opt-in
+  adapters/        standard-library installer + adapter tests
+  tests/           temp-fixture install/transition and guardrail tests
+```
+
+```mermaid
+flowchart LR
+  Core[Core sources] --> Simple[make ai simple]
+  Core --> Full[make ai full]
+  Optional[Optional sources] --> Full
+  Full --> Roles[Native roles + discoverable optional copies]
+```
+
+Codex and Gemini discover `.agents/skills` directly. Optional sources therefore live
+under `optional/`; full installs owned copies into `.agents/skills/<name>/` and Claude's
+`.claude/skills/`. Simple removes only owned generated copies. These shared discovery
+files remain while any installed host still requests full; `make ai simple` switches
+all three hosts together. Unmanaged files and settings are preserved; collisions fail.
+
+See [adapters](adapters/README.md), [rules](rules/README.md), [workflows](workflows/README.md),
+[tools](tools/README.md), and [provenance](optional/PROVENANCE.md). Optional source directories are
+not a claim that a host registers their skills before full installation.

@@ -4,6 +4,18 @@ description: "Run an anonymous multi-agent council in Herdr: several coding-agen
 argument-hint: "<task> [pattern=council|opinion|debate|collaborate] [agents=claude,codex,agy] [mode=read-only|edit] [rounds=3] [context=neutral|repo] [criteria=...]"
 ---
 
+## Repository boundary
+
+This is the newer installed Herdr-only Council procedure, not a generic team
+workflow. Require `HERDR_ENV=1` and the Herdr CLI before control commands; otherwise
+report unavailable and stop. Run repository-relative helper commands from the
+repository root. Load the shared role contract and Caveman at coordinator and
+worker startup, preserving all ballot markers, code, commands, and citations.
+The transcript helper supports local CLI formats only; it is not a remote
+transcript adapter. Read-only flags need host enforcement, not just role text.
+
+
+
 # Council
 
 Anonymous multi-agent research → fusion → voting → debate → consensus report.
@@ -93,7 +105,7 @@ Map `mode` to each CLI's native flags at `herdr agent start ... -- <args>`:
 
 All researchers answer in caveman style unless `style=plain`. A shared style also hides each model's writing fingerprint, which helps anonymity.
 
-- **Source:** `~/.agents/skills/caveman/SKILL.md`. Read it at setup. If it is missing, tell the user and ask whether to continue with `plain`.
+- **Source:** `.agents/skills/caveman/SKILL.md`. Read it at setup. If it is missing, tell the user and ask whether to continue with `plain`.
 - **Round 1 prompt:** open with a `STYLE CONTRACT` block containing the caveman skill instructions verbatim (the body after the frontmatter), the level, and: "Apply to every reply in this session. Section headings, vote keywords (`FIDELITY`, `VOTE:`, `CONCERNS`…), terminators (`END-OF-…`), code, names, numbers, URLs and sources stay verbatim." Do not rely on each CLI discovering the skill on its own; only some CLIs load it.
 - **Every later prompt:** repeat one line: `STYLE: caveman <level>, same contract as round 1.`
 - **Auto-clarity exceptions still apply** (security warnings, irreversible actions, order-sensitive steps). Researchers may write those parts in plain text.
@@ -115,6 +127,7 @@ Consensus = every ballot APPROVED after normalization.
    - Create the run dir: your session scratchpad if you have one, otherwise a fresh `mktemp -d` dir. For `neutral`, researchers work in an empty subdir of it.
    - **Create a dedicated Herdr workspace for the run** before any panes, so the user's workspace stays untouched: `herdr workspace create --cwd <dir> --label council-<topic> --no-focus`. Use its root pane and split further panes inside it. Arrange extra tabs there if needed.
    - Start one agent per pane with the mode flags.
+   - **Label the layout by role** so the user can tell panes apart: `herdr tab rename <tab_id> "council <topic>"`, `herdr pane rename <pane_id> "<pseudonym> researcher · <cli>"` for each researcher (e.g. `R1 researcher · codex`), and `herdr pane rename <own_pane_id> "council orchestrator"` only if the orchestrator pane is inside the run workspace. Labels are for the user's UI; never put them in prompts or ballots (anonymity). When a researcher is replaced or retired, relabel or `--clear` its pane.
    - If an agent is blocked at startup, read its screen. A folder-trust prompt for the dir you just created may be accepted; for anything else, ask the user.
 2. **Round 1: independent work.**
    - Send the same prompt to everyone: the style contract (see Style enforcement), rules (permission mode, anonymity), the brief verbatim, a fixed section template fitting the task, a word cap, and the terminator `END-OF-PLAN`.
@@ -166,7 +179,7 @@ TUI panes keep little scrollback, so `herdr agent read` usually shows only the t
 2. Read full replies from the CLIs' local transcripts with `scripts/extract_reply.py` (read-only access). Session IDs come from `herdr agent get <name>` → `.agent_session.value`.
 
 ```bash
-uv run python ~/.agents/skills/council/scripts/extract_reply.py --kind claude --session <id> --marker END-OF-PLAN --start "1." --out <file>
+uv run python .agents/optional/council/scripts/extract_reply.py --kind claude --session <id> --marker END-OF-PLAN --start "1." --out <file>
 ```
 
 Start keys per round: the first template heading for round 1, `ACK FUSION` for ballots, `CURRENT POSITION` or `FINAL ANSWER` for debate rounds.

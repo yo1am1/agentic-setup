@@ -1,48 +1,38 @@
-# Provenance
+# Sources and adaptations
 
-`source-manifest.json` records each source origin, original SHA-256, exported
-SHA-256 and exact text replacements. Unchanged copies have identical hashes.
-Full instructions remain; there are no synthesized replacements for source skills.
+The root `.agents/` directory is the primary environment. It was exported from
+an actively used development setup at revision `a13169d07ceed83f810f0009a53920c49881b71f`.
+`source-manifest.json` records each exported file's source, original SHA-256,
+current SHA-256 and adaptations. The installer and tests retain their original
+implementation; stack-specific guides become generic project guidance.
 
-## Sources
+## Main environment
 
-- Gewgur `.agents`: all 8 rules, 13 skills and their helpers, 4 workflows and
-  2 role prompts. The full `AGENTS.md` becomes an optional backend profile.
-- Installed autoresearch, Council and Herdr: complete skill bundles.
-- Installed Caveman family: actual local versions and compression helpers;
-  caveman-review is supplied from the installed Caveman plugin cache because
-  the existing help prompt refers to it. MIT, Julius Brussee.
-- Installed Ponytail 4.10.0: all six skill directories. MIT, DietrichGebert.
-- Personal evaluation agents: all four full role prompts, including host metadata.
-- Personal engineering prompt templates: all 18 planner, test writer, builder,
-  adversarial test reviewer, reviewer, documenter, scout and Fusion files. Only
-  prompt text and JSON contract examples are exported; no runtime/config/UI.
-- Agentic-environment research entry points: existing full Markdown workflows.
-- Gewgur adapter generator: source-based, extended to include skill support files.
+- Core Caveman, caveman-commit and project-flow instructions.
+- Seven complete specialist roles and shared workflow/ownership contracts.
+- Repository-local Claude, Codex and Gemini adapters, ownership tracking and tests.
+- Complete optional Council, Herdr, Cavecrew, Humanizer and Specs.md resources.
+- Optional, uninstalled Git guardrails; no application checks enabled by default.
 
-## Public configuration replacements
+The nested [upstream provenance](.agents/optional/PROVENANCE.md) records versions,
+original sources, licenses and runtime/redistribution limitations. Caveman and
+Humanizer notices are retained. Some supplied optional resources have unresolved
+redistribution terms; this integration does not establish new rights to them.
+No global configuration, credentials, application code, live session state or
+provider runtime is included in the main environment.
 
-Jira cloud/account/instance identifiers, the repository remote, project summary
-prefix, issue-key prefix, default parent epic and a Drive folder example become
-configuration placeholders. A named customer becomes `configured customer`.
-Procedure steps, constraints, code paths and test commands remain.
-Replacement categories are recorded per file in the manifest; removed private
-values are not repeated in the audit.
+## Preserved earlier library
 
-Fusion is a full invocation alias of the installed Council skill: only its name,
-slash invocation, heading and helper installation path change. Research pattern
-names and the complete consensus protocol are unchanged. The separate Fusion
-JSON templates are preserved verbatim and are not confused with Council ballots.
+`library/` retains the complete earlier instruction library, its original adapter
+generator, validation scripts, source records, licenses and project profile.
+Its source ledger uses paths relative to `library/`; the root ledger records those
+same files under the `library/` prefix. Existing public-configuration redactions
+and source hashes are preserved. It is reference material, outside root skill discovery.
 
-Two original skill descriptions contained unquoted colons and were invalid YAML.
-Only scalar quoting was corrected; their wording and full instructions remain.
+## Authorship
 
-The adapter extension copies every text support file alongside generated Claude
-SKILL.md files. This fixes the source generator's missing-helper behavior; path-
-scoped rules and role generation keep the existing implementation.
-
-The README, routing overview and library AGENTS guide describe this publication;
-they are not presented as copied source instructions. No live handovers, personal
-transcripts, provider configuration, credentials, application code, factory engine
-or UI are included. Historical commits are retained; the current tree reflects
-this scope. Third-party skills are attributed, not claimed as original inventions.
+Yehor Trepalin selected and merged the ingredients over time and assembled the main
+setup in at most one day. Integration, routing, portability and verification are
+separate from authorship of upstream skills. New README/demo/story documents and
+root integration files describe this repository rather than claiming to be copied
+upstream instructions. The source environment repository was not changed.

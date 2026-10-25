@@ -1,60 +1,99 @@
 # Agentic setup
 
-The rules, skills, workflows and prompts I use for AI-assisted development.
+**My working environment for building with coding agents.**
+
 By [Yehor Trepalin](https://github.com/yo1am1).
 
-The core comes from my Gewgur `.agents` layer: focused code changes, failure
-analysis, review, validation, agent tool/state contracts, retrieval and LLM
-observability. Full instructions and supporting scripts are retained.
+I assembled the main setup in at most one day. The skills and additions were
+carefully selected and merged by me over time. This repository brings that
+curation together: reusable instructions, specialist roles, host adapters,
+optional planning tools, and checks that keep changes reviewable.
 
-| Area | Contents |
-| --- | --- |
-| [Rules](.agents/rules/) | Safety, Git, testing, agent code, prompts, retrieval, state and observability |
-| [Workflows](.agents/workflows/) | Code change, debugging, review, Jira lifecycle, research setup/continuation and Fusion |
-| [Skills](.agents/skills/) | All 13 Gewgur skills; autoresearch; Council/Fusion; Herdr; full Caveman and Ponytail skill sets |
-| [Role prompts](.agents/agents/) | Investigator, code reviewer, bug hunter, senior Python, prompt engineer and devil's advocate |
-| [Engineering prompts](.agents/prompts/) | Full planner, test writer, builder, adversarial reviewer, reviewer, documenter, scout and Fusion task/system templates |
-| [Backend profile](.agents/profiles/langgraph-backend.md) | Full project guide for a FastAPI/LangGraph/retrieval backend |
+The engineering work here is in how the pieces fit: agents receive a clear scope,
+independent work can run in parallel, integration stays accountable, and generated
+configuration can be changed or removed without overwriting personal files.
 
-## Use
+## Try it
 
-Browse [.agents/README.md](.agents/README.md) for routing. Merge selected guides
-into your project's agent layer and link the applicable rules/workflows from its
-`AGENTS.md`. Project-specific skills keep their source `src/` paths and helper
-imports; adapt those to the consuming repository. Jira defaults and a Drive folder
-ID are placeholders, not working account configuration.
+Python 3 and Git are enough for the installer and its environment tests.
+From a fresh clone:
+
+```sh
+make ai          # inspect the two modes; installs nothing
+make ai full     # generate the full setup for Claude Code, Codex and Gemini
+make ai-test     # run 38 isolated adapter, installation and guardrail tests
+```
+
+For everyday focused work, `make ai simple` keeps three core skills and removes
+only installer-owned optional skills and roles. Simple is the default when no
+mode is selected. Full makes the specialist procedures available; the agent picks
+what the task needs. Existing personal settings and unmanaged files are preserved.
+
+For all repository checks, including source integrity:
 
 ```sh
 uv sync --locked
 make check
-make sync-agents
 ```
 
-The adapter generator copies full skill directories, including referenced helper
-scripts, into Claude's project skills; it also generates Claude rules/roles and
-Cursor rules. Generated files stay out of the public source tree.
+[Walk through the demo](docs/demo.md) · [How I built it](docs/setup-story.md) ·
+[Validation](VALIDATION.md) · [Sources and licenses](PROVENANCE.md)
 
-## Personal skills
+## A task can use the whole environment
 
-- [Caveman](.agents/skills/caveman/SKILL.md): terse communication, plus commit, review, compression, help and stats instructions.
-- [Ponytail](.agents/skills/ponytail/SKILL.md): minimal implementation, plus review, audit, debt, help and gain instructions.
-- [Fusion](.agents/skills/fusion/SKILL.md) / [Council](.agents/skills/council/SKILL.md): the same complete anonymous research, fusion, voting and debate workflow under two invocation names.
-- [Autoresearch](.agents/skills/autoresearch/SKILL.md): full create/run instructions and templates; runnable experiments are in [autoresearcher](https://github.com/yo1am1/autoresearcher).
+```mermaid
+flowchart LR
+    Brief[User goal and acceptance checks] --> Owner[Coordinator / main agent]
+    Owner --> Investigate[Investigator and researcher]
+    Investigate --> Implement[Engineer]
+    Implement --> Review[Code reviewer]
+    Review --> Refine[Simplifier / devil's advocate]
+    Refine --> Checks[Tests and reviewed diff]
+    Checks --> Deliver[Authorized delivery]
+```
 
-## Host requirements
+Roles are selected per task. Small changes stay solo. For independent work,
+assign separate paths and worktrees, agree the shared contracts, then review and
+integrate the results. A worker's passing tests do not prove the combined change
+passes. The [team workflow](.agents/workflows/team.md) defines that handoff.
 
-These are instruction files and selected helpers. Herdr/Council needs a Herdr
-session and configured coding-agent CLIs. Caveman stats needs its original plugin
-hooks; skills alone do not activate session hooks or auto-default modes. Compression
-uses Claude or an Anthropic API key and can incur model costs. Ponytail gain figures
-are upstream benchmarks, not measurements of my projects.
+| Role | Responsibility |
+| --- | --- |
+| Coordinator | Scope, dependencies, integration and final result |
+| Researcher | Check uncertain claims and retain source evidence |
+| Investigator | Trace the existing implementation and failure path |
+| Engineer | Make the smallest complete implementation |
+| Code reviewer | Find concrete correctness, safety and compatibility defects |
+| Devil's advocate | Challenge consequential assumptions |
+| Simplifier | Remove demonstrated complexity without losing behavior |
 
-Google Drive helpers need the Google API/OAuth libraries and your own credentials.
-LangSmith/PostHog helpers retain imports from the consuming backend; that backend
-and its SDKs are not bundled. Jira requires your own MCP integration and mappings.
-The project-development research entry points use the separately installed
-`agent-env` CLI. No external integration is contacted by `make check`.
+## What is included
 
-[Provenance](PROVENANCE.md) separates unchanged copies, configuration replacements
-and the Fusion alias. [Third-party licenses](licenses/) retain Caveman/Ponytail
-attribution. [Validation](VALIDATION.md) states exactly what the checks verify.
+- **Three host adapters:** Claude Code, Codex and Gemini. The same canonical
+  instructions generate each host's native role format.
+- **Core workflow:** Caveman, caveman-commit and project-flow. Brief planning,
+  exact evidence, explicit ownership and small complete changes.
+- **Optional procedures:** Council, Herdr, Cavecrew, Humanizer and the complete
+  bundled Specs.md flows. Each keeps its own runtime and activation requirements.
+- **Safe installation:** owned-file manifests, idempotent mode switches,
+  collision detection, symlink/path checks, and preservation of unmanaged settings.
+- **Optional Git guardrails:** checks against an isolated staged or outgoing Git
+  snapshot. Hooks start uninstalled; project checks start empty.
+- **A preserved reference library:** [library/](library/README.md) retains the
+  earlier backend rules, engineering prompts, Ponytail skills and adapter generator.
+  The root `.agents/` directory is the main environment.
+
+## What the tests establish
+
+The 38 environment tests exercise all three primary host outputs, simple/full
+transitions, shared ownership, linked resources, unmanaged-file preservation,
+unsafe-path refusal, partial staging and outgoing-ref validation. Tests use
+throwaway repositories and home directories. Root checks also verify skill
+metadata, every recorded source hash, and Python syntax.
+
+Native files being generated does not prove that a real host launched a team.
+The demo separates repeatable local checks from live agent execution. No provider,
+account, global hook or paid integration is installed by the setup commands.
+
+The [provenance](PROVENANCE.md) identifies adapted and third-party material.
+This is a curated environment; upstream skills remain attributed to their authors.

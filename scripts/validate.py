@@ -9,7 +9,11 @@ import yaml
 
 def main():
     root = Path(__file__).resolve().parents[1]
-    skills = list((root / ".agents/skills").glob("*/SKILL.md"))
+    optional = root / ".agents/optional"
+    skills = [path for path in (root / ".agents/skills").glob("*/SKILL.md")
+              if not (optional / path.parent.name / "SKILL.md").is_file()]
+    skills.extend(optional.glob("*/SKILL.md"))
+    skills.extend((root / "library/.agents/skills").glob("*/SKILL.md"))
     if not skills:
         raise ValueError("No skills found")
     for path in skills:

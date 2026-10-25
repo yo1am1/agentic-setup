@@ -1,3 +1,4 @@
+import json
 import shutil
 import subprocess
 import sys
@@ -6,58 +7,52 @@ import unittest
 from pathlib import Path
 
 
+ROOT = Path(__file__).resolve().parents[1]
+
+
 class ValidationCheck(unittest.TestCase):
     def test_invalid_metadata_and_source_drift_are_rejected(self):
-        source = Path(__file__).resolve().parents[1]
+        manifest = json.loads((ROOT / 'source-manifest.json').read_text())
         with tempfile.TemporaryDirectory() as folder:
-            root = Path(folder)
-            shutil.copytree(source / ".agents", root / ".agents")
-            shutil.copytree(source / "scripts", root / "scripts")
-            shutil.copy2(source / "source-manifest.json", root / "source-manifest.json")
-            shutil.copytree(source / "licenses", root / "licenses")
-            skill = root / ".agents/skills/council/SKILL.md"
-            original = skill.read_text()
-            for text in (
-                original.replace("name: council", "name: wrong"),
-                original + "\nUnrecorded instruction change\n",
+            target = Path(folder)
+            for entry in manifest:
+                relative = entry['path']
+                destination = target / relative
+                destination.parent.mkdir(parents=True, exist_ok=True)
+                shutil.copy2(ROOT / relative, destination)
+            shutil.copy2(ROOT / 'source-manifest.json', target / 'source-manifest.json')
+            command = [sys.executable, str(target / 'scripts/validate.py')]
+            for relative, name in (
+                ('.agents/skills/project-flow/SKILL.md', 'project-flow'),
+                ('library/.agents/skills/council/SKILL.md', 'council'),
             ):
-                skill.write_text(text)
-                result = subprocess.run(
-                    [sys.executable, str(root / "scripts/validate.py")],
-                    capture_output=True,
-                    text=True,
-                    check=False,
-                )
-                self.assertNotEqual(result.returncode, 0, result.stdout)
-            skill.write_text(original)
-            result = subprocess.run(
-                [sys.executable, str(root / "scripts/validate.py")],
-                capture_output=True,
-                text=True,
-                check=False,
-            )
+                skill = target / relative
+                original = skill.read_text()
+                for changed in (
+                    original.replace(f'name: {name}', 'name: wrong'),
+                    original + '\nUnrecorded instruction change\n',
+                ):
+                    skill.write_text(changed)
+                    result = subprocess.run(command, capture_output=True, text=True)
+                    self.assertNotEqual(result.returncode, 0, result.stdout)
+                skill.write_text(original)
+            result = subprocess.run(command, capture_output=True, text=True)
             self.assertEqual(result.returncode, 0, result.stderr)
 
-    def test_adapter_copies_helpers_and_detects_entrypoint_drift(self):
-        source = Path(__file__).resolve().parents[1]
+    def test_compatibility_entrypoint_uses_current_installer_without_writing(self):
         with tempfile.TemporaryDirectory() as folder:
-            root = Path(folder)
-            shutil.copytree(source / ".agents", root / ".agents")
-            shutil.copytree(source / "scripts", root / "scripts")
-            command = [sys.executable, str(root / "scripts/sync_agent_adapters.py")]
-            written = subprocess.run(command + ["--write"], capture_output=True, text=True)
-            self.assertEqual(written.returncode, 0, written.stderr)
-            for source_path in (root / ".agents/skills").rglob("*"):
-                if source_path.is_file() and source_path.name != "SKILL.md":
-                    generated = root / ".claude/skills" / source_path.relative_to(root / ".agents/skills")
-                    self.assertEqual(generated.read_bytes(), source_path.read_bytes())
-            checked = subprocess.run(command + ["--check"], capture_output=True, text=True)
-            self.assertEqual(checked.returncode, 0, checked.stderr)
-            helper = root / ".claude/skills/autoresearch/templates/train.py"
-            helper.write_text("# drift\n")
-            checked = subprocess.run(command + ["--check"], capture_output=True, text=True)
-            self.assertNotEqual(checked.returncode, 0)
+            target = Path(folder)
+            shutil.copytree(ROOT / '.agents', target / '.agents',
+                            ignore=shutil.ignore_patterns('__pycache__'))
+            (target / 'scripts').mkdir()
+            shutil.copy2(ROOT / 'scripts/sync_agent_adapters.py', target / 'scripts/sync_agent_adapters.py')
+            command = [sys.executable, str(target / 'scripts/sync_agent_adapters.py')]
+            result = subprocess.run(command, capture_output=True, text=True, cwd=target)
+            self.assertEqual(result.returncode, 0, result.stderr)
+            self.assertIn('Dry-run: layout=simple', result.stdout)
+            for host in ('claude', 'codex', 'gemini'):
+                self.assertFalse((target / f'.{host}').exists())
 
 
-if __name__ == "__main__":
+if __name__ == '__main__':
     unittest.main()

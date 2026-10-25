@@ -1,22 +1,37 @@
 # Validation
 
-Validated on 2026-10-01 with Python 3.12.3 and locked PyYAML 6.0.3.
+## Main environment
 
-`make check` passed:
+`make check` verifies:
 
-- YAML metadata: all 29 complete skills.
-- Manifest and Python syntax: 100 source exports; 91 unchanged copies; the other
-  entries record configuration redactions, YAML quoting, the Fusion alias or the
-  adapter extension.
-- Two regression checks: metadata/source corruption rejected; helper resources
-  copied into generated skill directories and drift rejected.
-- Adapter generation and drift: all 78 generated files in sync.
+- YAML metadata for canonical main skills and the archived library.
+- SHA-256 hashes for all recorded exports and Python syntax for exported scripts.
+- Rejection of corrupted metadata and unrecorded source changes.
+- The compatibility entry point routes to the main installer.
+- 26 adapter tests and 12 installation/guardrail tests using the standard library.
 
-The public tree has 8 rules, 9 workflows, 6 role prompts and 18 engineering templates (including 4 Fusion templates).
-Factory/UI directories and live handover/session state are absent.
+The 38 environment tests cover all three primary host outputs, repeated installs,
+simple/full transitions, shared ownership, generated links, preservation of user
+files, collisions/symlinks, partial staging and outgoing Git refs. Tests create
+temporary repositories and home directories. They install no live hooks or global
+configuration. `make ai-test` runs only these environment tests.
 
-The checks run no agents, model calls, OAuth logins, Jira writes or live provider
-operations. They establish packaging integrity, not the quality of model decisions
-or compatibility with every agent host. Backend helpers retain their source
-imports and need the consuming backend/SDKs. Plugin hooks, provider settings and
-external runtimes are not installed by copying these instruction files.
+`make ai full` plus an explicit `--layout full --check` validates generated files
+in this checkout. Generated configuration does not prove that a real host launched
+workers or that a provider-backed task succeeded. See [the demo](docs/demo.md) for
+a separate live walkthrough.
+
+The archived library's original validation record is kept in
+[library/VALIDATION.md](library/VALIDATION.md). Unrelated applications and specs are
+outside this environment check. No model, paid API, OAuth login or external
+integration is exercised by these checks. Upstream licensing/runtime caveats remain
+in the provenance.
+
+## Recorded local check, 2026-10-25
+
+`make check` passed: 40 tests (26 adapter, 12 installation/guardrail, two integrity
+regressions). Metadata validation covers 38 canonical skills across the main
+environment and preserved library; all 332 recorded exports pass their hashes.
+The full layout was installed in this checkout and all 364 generated files passed
+the explicit full-layout drift check. Seven role files exist for each primary host.
+These are local packaging and safety checks, not a recorded live agent swarm.

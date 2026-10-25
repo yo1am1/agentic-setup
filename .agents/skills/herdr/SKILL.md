@@ -136,6 +136,8 @@ herdr agent start reviewer --kind codex --pane <returned-pane-id> -- <agent-args
 
 A successful `agent start` returns only after Herdr detects the expected agent in the same pane and considers it ready for interactive input. If the agent is blocked during startup, the command returns `agent_not_ready` immediately but keeps the name available for `agent read` and `agent send-keys`. Wait until the agent becomes idle before prompting it. Startup defaults to a 30-second timeout.
 
+Label the layout by role right after starting agents, so the user can tell panes apart: `herdr pane rename <pane_id> "<role or task>"` for each new pane (e.g. `W1 catalog+retrieval`), plus `herdr tab rename <tab_id> <label>` / `herdr workspace rename <workspace_id> <label>` when you created the tab or workspace. Relabel or `herdr pane rename <pane_id> --clear` when an agent is retired or reassigned. Do not rename panes, tabs or workspaces you did not create unless the user asks.
+
 Submit work through the agent surface:
 
 ```bash

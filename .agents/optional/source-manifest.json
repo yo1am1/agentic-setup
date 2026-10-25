@@ -1,0 +1,1076 @@
+{
+  "schema_version": 2,
+  "path_root": ".agents",
+  "files": [
+    {
+      "path": "optional/PROVENANCE.md",
+      "source": "project-authored",
+      "source_sha256": null,
+      "sha256": "63dc49359232276b5b23a0b9e4234beb3ee8a79ccc06fa45f22123021d74ff4f"
+    },
+    {
+      "path": "optional/cavecrew/README.md",
+      "source": "~/.agents/skills/cavecrew/README.md",
+      "source_sha256": "e13d08785f72d305de1ac1fa9a49c349332bb4e2f6a24a06efd20144c36c4dc9",
+      "sha256": "9823cc13332a9eb581f88fb9d11d6f18a575cf33f4fe91ee14e084017a6f66eb"
+    },
+    {
+      "path": "optional/cavecrew/SKILL.md",
+      "source": "~/.agents/skills/cavecrew/SKILL.md",
+      "source_sha256": "b74f374f6aae6e9a31e78e7d876860406fe5833378e9298536edf176c12f379b",
+      "sha256": "75f7b0364426530565ac13eeedc2d5b1066680ddcd764fe0dad802f4b89b0650"
+    },
+    {
+      "path": "optional/council/SKILL.md",
+      "source": "~/.agents/skills/council/SKILL.md",
+      "source_sha256": "963dc09ef80c338d576fd37bfac6ff44358359ecf225b91643744c5e57f04121",
+      "sha256": "b2e83d30e8007fe8568090edb12662091ca60c91ec2b44308de27548058075f6"
+    },
+    {
+      "path": "optional/council/scripts/extract_reply.py",
+      "source": "~/.agents/skills/council/scripts/extract_reply.py",
+      "source_sha256": "91013375b9f052caf479087a042a925b41c320486f1a1ec4567874bd858f3aa8",
+      "sha256": "91013375b9f052caf479087a042a925b41c320486f1a1ec4567874bd858f3aa8"
+    },
+    {
+      "path": "optional/herdr/SKILL.md",
+      "source": "~/.agents/skills/herdr/SKILL.md",
+      "source_sha256": "66d983b93102815f6b4481dfa5fd15a76b9ed8f3fea3f64af492c2c973dd02c8",
+      "sha256": "66d983b93102815f6b4481dfa5fd15a76b9ed8f3fea3f64af492c2c973dd02c8"
+    },
+    {
+      "path": "optional/humanizer/LICENSE",
+      "source": "~/.agents/skills/humanizer/LICENSE",
+      "source_sha256": "4ac4810254ab36d45419141aeb8e69bf50652cfafe5b2dab947d06d44e5cbf96",
+      "sha256": "4ac4810254ab36d45419141aeb8e69bf50652cfafe5b2dab947d06d44e5cbf96"
+    },
+    {
+      "path": "optional/humanizer/SKILL.md",
+      "source": "~/.agents/skills/humanizer/SKILL.md",
+      "source_sha256": "0612f1dfb1672b0ea9b97e139bf1f06cabe98d8b27424fe8ff01e1fb4cc99cad",
+      "sha256": "3ca230fe20d5fce1684509d05ba1d522cb461146d82eb22413c9443f88e0aba7"
+    },
+    {
+      "path": "optional/humanizer/agents/openai.yaml",
+      "source": "~/.agents/skills/humanizer/agents/openai.yaml",
+      "source_sha256": "9d87ff83149a04f86a372948b8ee35fa249de20923867bbc2a49304290aad736",
+      "sha256": "cee05d69f99020780de421779e186ce95bf73a77c983dc66f671901174e5bfea"
+    },
+    {
+      "path": "optional/specsmd/SKILL.md",
+      "source": "project-authored",
+      "source_sha256": null,
+      "sha256": "482ac4dc322a405675212bd3e2516b03dcdf46de7ef81bef703ec3462c11b8dd"
+    },
+    {
+      "path": "optional/specsmd/resources/aidlc/README.md",
+      "source": "~/.specsmd/aidlc/README.md",
+      "source_sha256": "47b1c316adb38afe13c6ac865f79b1c419c522c1edb0e095890399ada11470cc",
+      "sha256": "3ce5164612801d31d4ff03d2f4ef91ff7a30a5bf0653649d9d7566a43b3ef647"
+    },
+    {
+      "path": "optional/specsmd/resources/aidlc/agents/construction-agent.md",
+      "source": "~/.specsmd/aidlc/agents/construction-agent.md",
+      "source_sha256": "d5a797e885caf015e9c37073a82b95eb558bc5e768a26fa5443004cdad1edabb",
+      "sha256": "bd9c88b27c0e41ce40b3f95cf65e268e0b13c45e3b7187f3cd95afd56bf942fe"
+    },
+    {
+      "path": "optional/specsmd/resources/aidlc/agents/inception-agent.md",
+      "source": "~/.specsmd/aidlc/agents/inception-agent.md",
+      "source_sha256": "55d0375d819499781c55e18840fa951bd1d07e9dd19fd207ec8541362a331c52",
+      "sha256": "c51e0412dc2dc123e01c55b3d0b981fda3137ad4e7cb371ef9fa6815831d8e20"
+    },
+    {
+      "path": "optional/specsmd/resources/aidlc/agents/master-agent.md",
+      "source": "~/.specsmd/aidlc/agents/master-agent.md",
+      "source_sha256": "a620d431ad38c81887784fe044f8f67b2da0a81cdb047d6151e9036ffc8cfd8b",
+      "sha256": "752269463760d9908fea800d9255d120fde3ef930c3e0b63389605fafe77c7ee"
+    },
+    {
+      "path": "optional/specsmd/resources/aidlc/agents/operations-agent.md",
+      "source": "~/.specsmd/aidlc/agents/operations-agent.md",
+      "source_sha256": "7b32526a7e27942430dd7b331134da4ba6204303ef7e1fcd2bd33ce8c6d2387a",
+      "sha256": "7150126ca7a51c725fe5821d91ac0574b8823f2cf9755184e00e0ebeaddef093"
+    },
+    {
+      "path": "optional/specsmd/resources/aidlc/context-config.yaml",
+      "source": "~/.specsmd/aidlc/context-config.yaml",
+      "source_sha256": "56c2d157b9c064420e3d35bbe7290901e058aa90923e20e5ec057e2dccf6a7b1",
+      "sha256": "56c2d157b9c064420e3d35bbe7290901e058aa90923e20e5ec057e2dccf6a7b1"
+    },
+    {
+      "path": "optional/specsmd/resources/aidlc/memory-bank.yaml",
+      "source": "~/.specsmd/aidlc/memory-bank.yaml",
+      "source_sha256": "1a9f55869a9deb810d9e0634ff8091121740d218e7d0182c87725d14173d7b18",
+      "sha256": "ad344205e01591bdfe3709ec91573de093e3434adbc9982a71549494b569ee23"
+    },
+    {
+      "path": "optional/specsmd/resources/aidlc/quick-start.md",
+      "source": "~/.specsmd/aidlc/quick-start.md",
+      "source_sha256": "16584525e4055e627d37cd23f13e0e590bc731ff7e1ba64c87c10a52981c52dc",
+      "sha256": "f2e6a00948b0dcdff6fac922c6ea02bef2d3470f26a6bff3f328987ada7bf8d3"
+    },
+    {
+      "path": "optional/specsmd/resources/aidlc/scripts/artifact-validator.cjs",
+      "source": "~/.specsmd/aidlc/scripts/artifact-validator.cjs",
+      "source_sha256": "84d63bc530d6ede455c2484053ca79af5ebaa81617e106362760a5dc7e092c0d",
+      "sha256": "c24340d9da3236a7e73273c7abc9863da10ea15e24a7d28861687601297d1cf1"
+    },
+    {
+      "path": "optional/specsmd/resources/aidlc/scripts/bolt-complete.cjs",
+      "source": "~/.specsmd/aidlc/scripts/bolt-complete.cjs",
+      "source_sha256": "68ba8b221ed610337e9b27adf1947ca99d51f727327f7f88db3244a45aa59db0",
+      "sha256": "d86b5ad608d8d6b7b869f68c12b98ea4ae7200072fd9d98d2d7837e8a84e4a23"
+    },
+    {
+      "path": "optional/specsmd/resources/aidlc/scripts/status-integrity.cjs",
+      "source": "~/.specsmd/aidlc/scripts/status-integrity.cjs",
+      "source_sha256": "690a30bec239703f8d457c89e32d90ac763bed864d791785cf7c457be90d335d",
+      "sha256": "fa672d16a43cb5888c43e51dca9c82e27c558e76df33e69ae729671e3f338333"
+    },
+    {
+      "path": "optional/specsmd/resources/aidlc/skills/construction/bolt-list.md",
+      "source": "~/.specsmd/aidlc/skills/construction/bolt-list.md",
+      "source_sha256": "25c453d3aa1f9027b6792167122ad57824984c7c307e13b48f9905ba3401b12c",
+      "sha256": "5789563227d152228ad57f279dca725af3de09e33cdbb7cf1c237ed3c1040e2f"
+    },
+    {
+      "path": "optional/specsmd/resources/aidlc/skills/construction/bolt-replan.md",
+      "source": "~/.specsmd/aidlc/skills/construction/bolt-replan.md",
+      "source_sha256": "dab9856119dd1124913919a38a074518d85a1a4d4c2a6ff73cf51cc2324ad76a",
+      "sha256": "8ce7d1b4dc6c186dec09f8f5dd6e81aee420cdd48b669120de1343a686402f0a"
+    },
+    {
+      "path": "optional/specsmd/resources/aidlc/skills/construction/bolt-start.md",
+      "source": "~/.specsmd/aidlc/skills/construction/bolt-start.md",
+      "source_sha256": "8626c13b3ebd9593791f31f20d298e64caca5aa9bcd297ba1363ae6bc11288f5",
+      "sha256": "de89f00bcf5ca6ff1ba093ec0c4c7144a6dcf0364203010c43de43385daa7a6a"
+    },
+    {
+      "path": "optional/specsmd/resources/aidlc/skills/construction/bolt-status.md",
+      "source": "~/.specsmd/aidlc/skills/construction/bolt-status.md",
+      "source_sha256": "53323e56cb33c5ab69388ed7fe37eb42302a1a2b54eabbed0b09eaed4bdcd5dd",
+      "sha256": "7b953ca58dac1e5cefc5838ad7886f59b974f092183c1a5ae6c541a7ddbc38ad"
+    },
+    {
+      "path": "optional/specsmd/resources/aidlc/skills/construction/navigator.md",
+      "source": "~/.specsmd/aidlc/skills/construction/navigator.md",
+      "source_sha256": "7b2bddb14af0ae5e42470975230862fd675490ceb8a69a014d22d6e81f1b242c",
+      "sha256": "0c9e4da164270d9a939c7663f21ace907cedd86d6f579152b336bde702d9f9cd"
+    },
+    {
+      "path": "optional/specsmd/resources/aidlc/skills/construction/prototype-apply.md",
+      "source": "~/.specsmd/aidlc/skills/construction/prototype-apply.md",
+      "source_sha256": "ea0250b9bab060faf664314402e58e41477e9f3dd4894493ca6829175f49b541",
+      "sha256": "ea0250b9bab060faf664314402e58e41477e9f3dd4894493ca6829175f49b541"
+    },
+    {
+      "path": "optional/specsmd/resources/aidlc/skills/inception/bolt-plan.md",
+      "source": "~/.specsmd/aidlc/skills/inception/bolt-plan.md",
+      "source_sha256": "89861614be08645af92ffb4c9f4b64971abb411c10723e7c53060cddb25d8266",
+      "sha256": "0041b7981cb777860d4c465b91220e3a21e1fe25225a5cbc018732fe37d57ae6"
+    },
+    {
+      "path": "optional/specsmd/resources/aidlc/skills/inception/context.md",
+      "source": "~/.specsmd/aidlc/skills/inception/context.md",
+      "source_sha256": "63a24efc493a60cb3c23d392690bc41d98a2b32ddb7256fc2b7d1643cfc7cfb4",
+      "sha256": "907583ba9ab4bf830278cde5cf08d49a9711ba477fa074406b3c1758dff1c58f"
+    },
+    {
+      "path": "optional/specsmd/resources/aidlc/skills/inception/intent-create.md",
+      "source": "~/.specsmd/aidlc/skills/inception/intent-create.md",
+      "source_sha256": "db3a1a5cf4c21c7449b62748ec1ca6980055204235b61f5826a269db313607eb",
+      "sha256": "b5c462cc2a062f59ea1aa31f3bb7828f594b7110385c0fc4e5e281a73be07002"
+    },
+    {
+      "path": "optional/specsmd/resources/aidlc/skills/inception/intent-list.md",
+      "source": "~/.specsmd/aidlc/skills/inception/intent-list.md",
+      "source_sha256": "269e020722281c3fd5d6cfbe98ee90beb21302ee9b80adbc33b08d3801c30307",
+      "sha256": "feb6e781cbd64f47e82eaa22880f2705b8af2902505967b9b45616da26c524ae"
+    },
+    {
+      "path": "optional/specsmd/resources/aidlc/skills/inception/navigator.md",
+      "source": "~/.specsmd/aidlc/skills/inception/navigator.md",
+      "source_sha256": "544992a56ef703616a579aa475454087e2edcecc3971c7c879f6d40e9df4df8b",
+      "sha256": "8ec0c6c5f720bdce627d453708cee00d3d4747ffb3b20be095de77e018d227b5"
+    },
+    {
+      "path": "optional/specsmd/resources/aidlc/skills/inception/requirements.md",
+      "source": "~/.specsmd/aidlc/skills/inception/requirements.md",
+      "source_sha256": "ed45b8f02eb06b75d42ccb9fdbbb054545537e65ad8196962f29a83e87ea1778",
+      "sha256": "51dddeec816913d0f36eb0e1932f29691cc3a75f3a12af1bc1529eaf863516c0"
+    },
+    {
+      "path": "optional/specsmd/resources/aidlc/skills/inception/review.md",
+      "source": "~/.specsmd/aidlc/skills/inception/review.md",
+      "source_sha256": "03e005c37bb19e77bb167ab6176c018feb2698b08eae0fcefd4bc7c6b5ee0d3a",
+      "sha256": "3c053a7a93507bfbb7f42cf02c3872778686a5d2a768840eaa899e290910e0bd"
+    },
+    {
+      "path": "optional/specsmd/resources/aidlc/skills/inception/story-create.md",
+      "source": "~/.specsmd/aidlc/skills/inception/story-create.md",
+      "source_sha256": "d4a5ff18388137a959809478a1c6d4c413255e27a0884bab15eb39cce149b9e1",
+      "sha256": "87640d379f939c5b613126bfeb370b28d4e6f13837e1e7099450047904a68c39"
+    },
+    {
+      "path": "optional/specsmd/resources/aidlc/skills/inception/units.md",
+      "source": "~/.specsmd/aidlc/skills/inception/units.md",
+      "source_sha256": "771e1a1333b27d33b5d278bdae6d9de012406921300d711221d0bcf6436b9134",
+      "sha256": "d52fdd2f64318763b0eeacc7f0fcd32801fb29298b00206f0a6d62e5af4a2d9a"
+    },
+    {
+      "path": "optional/specsmd/resources/aidlc/skills/inception/vibe-to-spec.md",
+      "source": "~/.specsmd/aidlc/skills/inception/vibe-to-spec.md",
+      "source_sha256": "1c12682c84d0665d309836a623bc2068ffee7a36607905b49472dac46648fc6d",
+      "sha256": "8716463626fe9fe9c4c1dc93047ac5ba40c5973ee27adc8cf0667151e7174343"
+    },
+    {
+      "path": "optional/specsmd/resources/aidlc/skills/master/analyze-context.md",
+      "source": "~/.specsmd/aidlc/skills/master/analyze-context.md",
+      "source_sha256": "89567fc802b6bfda7b4184e33717952830bebaa3c924b21f46a852a1dbf4c6eb",
+      "sha256": "fec8f5b9b818db4ab6dff1b37920d79b914428f22c8264ef5c20e2b5b12bd1a4"
+    },
+    {
+      "path": "optional/specsmd/resources/aidlc/skills/master/answer-question.md",
+      "source": "~/.specsmd/aidlc/skills/master/answer-question.md",
+      "source_sha256": "ffb784f25158bbad68128128e8837ebd5750af24bf8146960df42849f8841e0c",
+      "sha256": "7a14e131787818159a8259efb97e9a86d3d220ccaf1ba84002dcc82a01015eba"
+    },
+    {
+      "path": "optional/specsmd/resources/aidlc/skills/master/explain-flow.md",
+      "source": "~/.specsmd/aidlc/skills/master/explain-flow.md",
+      "source_sha256": "ea652fb2f45d48557c04c9871586a2d498af58515b98f484e9f89f5dc271d550",
+      "sha256": "c609e0f8f009dab348898c7ec0f8fb933cc3b2d657c30b5fea6c29088bc460c1"
+    },
+    {
+      "path": "optional/specsmd/resources/aidlc/skills/master/project-init.md",
+      "source": "~/.specsmd/aidlc/skills/master/project-init.md",
+      "source_sha256": "ae1a1c3731f9fe47860ef0c174508e0902c1d15b33b106b6a12e20bbb626d7b5",
+      "sha256": "693fc5d0d9ddc5ad49f0f1734c28c61629c2b3058c111b138af60a3f0f2168ac"
+    },
+    {
+      "path": "optional/specsmd/resources/aidlc/skills/master/route-request.md",
+      "source": "~/.specsmd/aidlc/skills/master/route-request.md",
+      "source_sha256": "b0e7844f99aacc7ba0fcefb31b7cbd024ae773f59f11632bc3427830cce966f7",
+      "sha256": "45d7f4090c19356e262f80fa9c43450afe3e3405d058b28cbb72d1e4794576b1"
+    },
+    {
+      "path": "optional/specsmd/resources/aidlc/skills/operations/build.md",
+      "source": "~/.specsmd/aidlc/skills/operations/build.md",
+      "source_sha256": "0cf4bf146037014357f8d6784240c0f73463545562e68f5f129b4bc3e1a1074c",
+      "sha256": "d0997b000401de402b9fb263bd38b522d09ae3df73fa53cc82ffef3d90ee0b12"
+    },
+    {
+      "path": "optional/specsmd/resources/aidlc/skills/operations/deploy.md",
+      "source": "~/.specsmd/aidlc/skills/operations/deploy.md",
+      "source_sha256": "5db2498ad2e91308715b8f2787933f9c1ca9297a70b7a83316e3f7791f541492",
+      "sha256": "a911621bf5e3a24a3866ff08555a6add467ca702bf0d1a5da5ac30817127105f"
+    },
+    {
+      "path": "optional/specsmd/resources/aidlc/skills/operations/monitor.md",
+      "source": "~/.specsmd/aidlc/skills/operations/monitor.md",
+      "source_sha256": "c9730e8da5b2c7674924c3cf258a48149f60f0a73381e22c9c37967bd056dc1f",
+      "sha256": "827d05dec17102d8ee04c0ba94cd58b8c48c16b89d560080bf8cd0d30b0c2343"
+    },
+    {
+      "path": "optional/specsmd/resources/aidlc/skills/operations/navigator.md",
+      "source": "~/.specsmd/aidlc/skills/operations/navigator.md",
+      "source_sha256": "9d9ed5f3295c3f22f1187a125c85bf9522a8c140c4a6437ea6f33e3982560c00",
+      "sha256": "f1ec2d7301fbaee2dac072e42d2d0cc55dbceff55e249795dabda0dc2963e942"
+    },
+    {
+      "path": "optional/specsmd/resources/aidlc/skills/operations/verify.md",
+      "source": "~/.specsmd/aidlc/skills/operations/verify.md",
+      "source_sha256": "c3c36ab2a1e5fb526de835e7e172e4cd583d9d4aac964b0305d376945afeaa11",
+      "sha256": "ed78ab6b4f44b920c9edf9e2ba88dfa7fa8ce2c80fad69ce49a5326ccb33ac1f"
+    },
+    {
+      "path": "optional/specsmd/resources/aidlc/templates/construction/bolt-template.md",
+      "source": "~/.specsmd/aidlc/templates/construction/bolt-template.md",
+      "source_sha256": "0a0798edb8374c131504c222d4464acf513675e716bb86210d13526b771cc6f1",
+      "sha256": "0bc9e3575835f245396d259f5bb0e0519aeae191a5fac6200e458675760ae38f"
+    },
+    {
+      "path": "optional/specsmd/resources/aidlc/templates/construction/bolt-types/ddd-construction-bolt.md",
+      "source": "~/.specsmd/aidlc/templates/construction/bolt-types/ddd-construction-bolt.md",
+      "source_sha256": "c2e39e69c82ddbfbc9ab11f3967f74d30e6770d8e26b933dda6836bbcfbc1e23",
+      "sha256": "c9e2ee3b2bb079ac320503db24e0a623fb9e8661a9fa360588f9bb34dd743f39"
+    },
+    {
+      "path": "optional/specsmd/resources/aidlc/templates/construction/bolt-types/ddd-construction-bolt/adr-template.md",
+      "source": "~/.specsmd/aidlc/templates/construction/bolt-types/ddd-construction-bolt/adr-template.md",
+      "source_sha256": "38d92fb239762341a7efd31437bde3cfebae405a2d861a7fa1aa442e0b97bb99",
+      "sha256": "38d92fb239762341a7efd31437bde3cfebae405a2d861a7fa1aa442e0b97bb99"
+    },
+    {
+      "path": "optional/specsmd/resources/aidlc/templates/construction/bolt-types/ddd-construction-bolt/ddd-01-domain-model-template.md",
+      "source": "~/.specsmd/aidlc/templates/construction/bolt-types/ddd-construction-bolt/ddd-01-domain-model-template.md",
+      "source_sha256": "c7bdbb3b05194b0ea0afe8eb4590c90c796722c6f082938053f5cb68ce6ea7db",
+      "sha256": "c7bdbb3b05194b0ea0afe8eb4590c90c796722c6f082938053f5cb68ce6ea7db"
+    },
+    {
+      "path": "optional/specsmd/resources/aidlc/templates/construction/bolt-types/ddd-construction-bolt/ddd-02-technical-design-template.md",
+      "source": "~/.specsmd/aidlc/templates/construction/bolt-types/ddd-construction-bolt/ddd-02-technical-design-template.md",
+      "source_sha256": "0067cea56f4131c8f914c7092d43d0df466295e92caa6c575a835d1da29dbfe6",
+      "sha256": "0067cea56f4131c8f914c7092d43d0df466295e92caa6c575a835d1da29dbfe6"
+    },
+    {
+      "path": "optional/specsmd/resources/aidlc/templates/construction/bolt-types/ddd-construction-bolt/ddd-03-test-report-template.md",
+      "source": "~/.specsmd/aidlc/templates/construction/bolt-types/ddd-construction-bolt/ddd-03-test-report-template.md",
+      "source_sha256": "16fa2562a16d64001844d675bdc542b665b5e265980e20f6cf56259343db1d4e",
+      "sha256": "16fa2562a16d64001844d675bdc542b665b5e265980e20f6cf56259343db1d4e"
+    },
+    {
+      "path": "optional/specsmd/resources/aidlc/templates/construction/bolt-types/simple-construction-bolt.md",
+      "source": "~/.specsmd/aidlc/templates/construction/bolt-types/simple-construction-bolt.md",
+      "source_sha256": "5a47be37523f03b0629c4697fde5d448c8b2d70aee33846daa1b6913d03aca69",
+      "sha256": "9bd9019cf87506956b31aad173fe647211a1e6fa23e30fe898ddf5081f827af1"
+    },
+    {
+      "path": "optional/specsmd/resources/aidlc/templates/construction/bolt-types/spike-bolt.md",
+      "source": "~/.specsmd/aidlc/templates/construction/bolt-types/spike-bolt.md",
+      "source_sha256": "8890c04678b4a8d1519f8ba5e5ee1deeac6d070de79af6b1e627f797757a18de",
+      "sha256": "398aedcee16d7c78b07ed4c031f310592a3b67f771103e85eb99dc8c1b801f92"
+    },
+    {
+      "path": "optional/specsmd/resources/aidlc/templates/construction/construction-log-template.md",
+      "source": "~/.specsmd/aidlc/templates/construction/construction-log-template.md",
+      "source_sha256": "5b9f2b6d8be4b50cc627799d4b5225748e390d5c8128ece8e7080e2f0ebf8ba5",
+      "sha256": "5b9f2b6d8be4b50cc627799d4b5225748e390d5c8128ece8e7080e2f0ebf8ba5"
+    },
+    {
+      "path": "optional/specsmd/resources/aidlc/templates/construction/standards/coding-standards.md",
+      "source": "~/.specsmd/aidlc/templates/construction/standards/coding-standards.md",
+      "source_sha256": "e2e4d292ee6e0c86c8f55ae50678a3cf29e1e7ed040d61e0577b8f231ba7fe18",
+      "sha256": "e2e4d292ee6e0c86c8f55ae50678a3cf29e1e7ed040d61e0577b8f231ba7fe18"
+    },
+    {
+      "path": "optional/specsmd/resources/aidlc/templates/construction/standards/system-architecture.md",
+      "source": "~/.specsmd/aidlc/templates/construction/standards/system-architecture.md",
+      "source_sha256": "4a5cbc455cb1e543e5022c9fee03919abc21cfa40b24de2fa71a750131376f08",
+      "sha256": "4a5cbc455cb1e543e5022c9fee03919abc21cfa40b24de2fa71a750131376f08"
+    },
+    {
+      "path": "optional/specsmd/resources/aidlc/templates/construction/standards/tech-stack.md",
+      "source": "~/.specsmd/aidlc/templates/construction/standards/tech-stack.md",
+      "source_sha256": "f46ae843856c3d234935bb0caff50a832483deaf950690ce01d1e8aadf59acf1",
+      "sha256": "f46ae843856c3d234935bb0caff50a832483deaf950690ce01d1e8aadf59acf1"
+    },
+    {
+      "path": "optional/specsmd/resources/aidlc/templates/inception/inception-log-template.md",
+      "source": "~/.specsmd/aidlc/templates/inception/inception-log-template.md",
+      "source_sha256": "346916dcef75eea8e64be82c1013c76a24d03d5c154163662ad2ee57442afa2e",
+      "sha256": "346916dcef75eea8e64be82c1013c76a24d03d5c154163662ad2ee57442afa2e"
+    },
+    {
+      "path": "optional/specsmd/resources/aidlc/templates/inception/project/README.md",
+      "source": "~/.specsmd/aidlc/templates/inception/project/README.md",
+      "source_sha256": "b74e3dc9bb5f90f024012ff0374cc0a8d50946202cd4780a88cd480f0c98ae79",
+      "sha256": "b74e3dc9bb5f90f024012ff0374cc0a8d50946202cd4780a88cd480f0c98ae79"
+    },
+    {
+      "path": "optional/specsmd/resources/aidlc/templates/inception/requirements-template.md",
+      "source": "~/.specsmd/aidlc/templates/inception/requirements-template.md",
+      "source_sha256": "71be0bb09bcfe7be64c0271132ae387d9bd76c05eecf7f4d9dd743ad3cb8f5f7",
+      "sha256": "71be0bb09bcfe7be64c0271132ae387d9bd76c05eecf7f4d9dd743ad3cb8f5f7"
+    },
+    {
+      "path": "optional/specsmd/resources/aidlc/templates/inception/stories-template.md",
+      "source": "~/.specsmd/aidlc/templates/inception/stories-template.md",
+      "source_sha256": "317dc39f46dc7196402f2922ad3fbefbbfca95f4678482b15d8f8100f9630fae",
+      "sha256": "317dc39f46dc7196402f2922ad3fbefbbfca95f4678482b15d8f8100f9630fae"
+    },
+    {
+      "path": "optional/specsmd/resources/aidlc/templates/inception/story-template.md",
+      "source": "~/.specsmd/aidlc/templates/inception/story-template.md",
+      "source_sha256": "e8004052651ebaeba69955c662caada8d59bf7422a1538a0968533158662dd52",
+      "sha256": "e8004052651ebaeba69955c662caada8d59bf7422a1538a0968533158662dd52"
+    },
+    {
+      "path": "optional/specsmd/resources/aidlc/templates/inception/system-context-template.md",
+      "source": "~/.specsmd/aidlc/templates/inception/system-context-template.md",
+      "source_sha256": "d9455a0a25e4f7147b7c0887cb38a085b6f903681b711c98199176e3cb89bf19",
+      "sha256": "d9455a0a25e4f7147b7c0887cb38a085b6f903681b711c98199176e3cb89bf19"
+    },
+    {
+      "path": "optional/specsmd/resources/aidlc/templates/inception/unit-brief-template.md",
+      "source": "~/.specsmd/aidlc/templates/inception/unit-brief-template.md",
+      "source_sha256": "dba79b870e5259758ce3c4310423017c75467d5d7f9c54e9ceb3ebb592a09d65",
+      "sha256": "dba79b870e5259758ce3c4310423017c75467d5d7f9c54e9ceb3ebb592a09d65"
+    },
+    {
+      "path": "optional/specsmd/resources/aidlc/templates/inception/units-template.md",
+      "source": "~/.specsmd/aidlc/templates/inception/units-template.md",
+      "source_sha256": "7be5ce02a1810016b379dd72d524f024363fd072d5b4d5b5fac21ec910f26634",
+      "sha256": "7be5ce02a1810016b379dd72d524f024363fd072d5b4d5b5fac21ec910f26634"
+    },
+    {
+      "path": "optional/specsmd/resources/aidlc/templates/standards/catalog.yaml",
+      "source": "~/.specsmd/aidlc/templates/standards/catalog.yaml",
+      "source_sha256": "4fa1a4c5d99010535cea420284f20c38b4bb55ffe1160497e39eac1d3478bb22",
+      "sha256": "4fa1a4c5d99010535cea420284f20c38b4bb55ffe1160497e39eac1d3478bb22"
+    },
+    {
+      "path": "optional/specsmd/resources/aidlc/templates/standards/coding-standards.guide.md",
+      "source": "~/.specsmd/aidlc/templates/standards/coding-standards.guide.md",
+      "source_sha256": "8aaf8c8a122e19a53899510d55bb0ae311f3c3a445bd250464dce39e201cc5d3",
+      "sha256": "8aaf8c8a122e19a53899510d55bb0ae311f3c3a445bd250464dce39e201cc5d3"
+    },
+    {
+      "path": "optional/specsmd/resources/aidlc/templates/standards/data-stack.guide.md",
+      "source": "~/.specsmd/aidlc/templates/standards/data-stack.guide.md",
+      "source_sha256": "79787e02fded2327e41ab6a3e807963d996723d52071ff8cebef99b5cda25a56",
+      "sha256": "79787e02fded2327e41ab6a3e807963d996723d52071ff8cebef99b5cda25a56"
+    },
+    {
+      "path": "optional/specsmd/resources/aidlc/templates/standards/decision-index-template.md",
+      "source": "~/.specsmd/aidlc/templates/standards/decision-index-template.md",
+      "source_sha256": "2bd226f96c3fedb2e3a501c8090ac69150646f5d00037a8b9b14ea49b6b5a91b",
+      "sha256": "2bd226f96c3fedb2e3a501c8090ac69150646f5d00037a8b9b14ea49b6b5a91b"
+    },
+    {
+      "path": "optional/specsmd/resources/aidlc/templates/standards/tech-stack.guide.md",
+      "source": "~/.specsmd/aidlc/templates/standards/tech-stack.guide.md",
+      "source_sha256": "820acfa2bdbe99f2c4d0efbcf9549308a782003ee8b9d92fbdccc0665fa3491a",
+      "sha256": "820acfa2bdbe99f2c4d0efbcf9549308a782003ee8b9d92fbdccc0665fa3491a"
+    },
+    {
+      "path": "optional/specsmd/resources/fire/README.md",
+      "source": "~/.specsmd/fire/README.md",
+      "source_sha256": "ca896120a0a470085f3d7b6049601fc878bbe42e74b62c2592222027e61f700c",
+      "sha256": "6ff0bbd1ff563da8cb91374df432155ff092a9b42532bd343f05693a09fae2e5"
+    },
+    {
+      "path": "optional/specsmd/resources/fire/agents/builder/agent.md",
+      "source": "~/.specsmd/fire/agents/builder/agent.md",
+      "source_sha256": "02dc69bef1a67555c972e28be055c57831ae7f990a9c591318ec69be84c03d53",
+      "sha256": "02dc69bef1a67555c972e28be055c57831ae7f990a9c591318ec69be84c03d53"
+    },
+    {
+      "path": "optional/specsmd/resources/fire/agents/builder/skills/code-review/SKILL.md",
+      "source": "~/.specsmd/fire/agents/builder/skills/code-review/SKILL.md",
+      "source_sha256": "77df04d6f09191c88ffd411496276a1a62f5f08fd5ca79a3897ce2e92ab0db42",
+      "sha256": "77df04d6f09191c88ffd411496276a1a62f5f08fd5ca79a3897ce2e92ab0db42"
+    },
+    {
+      "path": "optional/specsmd/resources/fire/agents/builder/skills/code-review/references/auto-fix-rules.md",
+      "source": "~/.specsmd/fire/agents/builder/skills/code-review/references/auto-fix-rules.md",
+      "source_sha256": "43cff60339f5e7bf33efa009c17de24f20bd04e3dc988e91432c19bef88fbe5a",
+      "sha256": "43cff60339f5e7bf33efa009c17de24f20bd04e3dc988e91432c19bef88fbe5a"
+    },
+    {
+      "path": "optional/specsmd/resources/fire/agents/builder/skills/code-review/references/review-categories.md",
+      "source": "~/.specsmd/fire/agents/builder/skills/code-review/references/review-categories.md",
+      "source_sha256": "ce49b51ea71011633cf4bde13d3f77ab6cc19a398e30332f6da2348b5fd8856a",
+      "sha256": "ce49b51ea71011633cf4bde13d3f77ab6cc19a398e30332f6da2348b5fd8856a"
+    },
+    {
+      "path": "optional/specsmd/resources/fire/agents/builder/skills/code-review/templates/review-report.md.hbs",
+      "source": "~/.specsmd/fire/agents/builder/skills/code-review/templates/review-report.md.hbs",
+      "source_sha256": "8315eee76f5858d7bfb80e2458dbe34093c757b1268ecc44c3d5f9c8fe1bc301",
+      "sha256": "8315eee76f5858d7bfb80e2458dbe34093c757b1268ecc44c3d5f9c8fe1bc301"
+    },
+    {
+      "path": "optional/specsmd/resources/fire/agents/builder/skills/run-execute/SKILL.md",
+      "source": "~/.specsmd/fire/agents/builder/skills/run-execute/SKILL.md",
+      "source_sha256": "e08f082c2a15701cdb90a9a3e212a8e17bf64bd8ea32831d8d316cea7093b27b",
+      "sha256": "e08f082c2a15701cdb90a9a3e212a8e17bf64bd8ea32831d8d316cea7093b27b"
+    },
+    {
+      "path": "optional/specsmd/resources/fire/agents/builder/skills/run-execute/scripts/complete-run.cjs",
+      "source": "~/.specsmd/fire/agents/builder/skills/run-execute/scripts/complete-run.cjs",
+      "source_sha256": "f8622010063088c69375c321eceae29e871e8875faed1fd54d37ec8982b2514a",
+      "sha256": "f8622010063088c69375c321eceae29e871e8875faed1fd54d37ec8982b2514a"
+    },
+    {
+      "path": "optional/specsmd/resources/fire/agents/builder/skills/run-execute/scripts/init-run.cjs",
+      "source": "~/.specsmd/fire/agents/builder/skills/run-execute/scripts/init-run.cjs",
+      "source_sha256": "96678edafe640ff4bd0fdddf878265f4bdfce2ddc969aa404612baf25f821fdf",
+      "sha256": "96678edafe640ff4bd0fdddf878265f4bdfce2ddc969aa404612baf25f821fdf"
+    },
+    {
+      "path": "optional/specsmd/resources/fire/agents/builder/skills/run-execute/scripts/update-checkpoint.cjs",
+      "source": "~/.specsmd/fire/agents/builder/skills/run-execute/scripts/update-checkpoint.cjs",
+      "source_sha256": "23f940f3bef03d1889830ee77b84c2173a37e007bc805d0ddd132c0cc5485c1d",
+      "sha256": "23f940f3bef03d1889830ee77b84c2173a37e007bc805d0ddd132c0cc5485c1d"
+    },
+    {
+      "path": "optional/specsmd/resources/fire/agents/builder/skills/run-execute/scripts/update-phase.cjs",
+      "source": "~/.specsmd/fire/agents/builder/skills/run-execute/scripts/update-phase.cjs",
+      "source_sha256": "418b4c1009ba09b505a04b699d4cd26249e1e58eadd479f0814afe70679e47f1",
+      "sha256": "418b4c1009ba09b505a04b699d4cd26249e1e58eadd479f0814afe70679e47f1"
+    },
+    {
+      "path": "optional/specsmd/resources/fire/agents/builder/skills/run-execute/templates/plan.md.hbs",
+      "source": "~/.specsmd/fire/agents/builder/skills/run-execute/templates/plan.md.hbs",
+      "source_sha256": "e659d139f331066a05d01102dcbb54d94eac97baa9b87c623fa0b2e2d584b6b6",
+      "sha256": "e659d139f331066a05d01102dcbb54d94eac97baa9b87c623fa0b2e2d584b6b6"
+    },
+    {
+      "path": "optional/specsmd/resources/fire/agents/builder/skills/run-execute/templates/test-report.md.hbs",
+      "source": "~/.specsmd/fire/agents/builder/skills/run-execute/templates/test-report.md.hbs",
+      "source_sha256": "f6c8848bd31cee30286167231eb1f27833e6f4c4eccb136562d9a9b548fe5644",
+      "sha256": "f6c8848bd31cee30286167231eb1f27833e6f4c4eccb136562d9a9b548fe5644"
+    },
+    {
+      "path": "optional/specsmd/resources/fire/agents/builder/skills/run-plan/SKILL.md",
+      "source": "~/.specsmd/fire/agents/builder/skills/run-plan/SKILL.md",
+      "source_sha256": "b4b5573df98de9d349ee3ae35e905d6b8ca3e4d5d42aff499c8dff1adeaa12a7",
+      "sha256": "b4b5573df98de9d349ee3ae35e905d6b8ca3e4d5d42aff499c8dff1adeaa12a7"
+    },
+    {
+      "path": "optional/specsmd/resources/fire/agents/builder/skills/run-status/SKILL.md",
+      "source": "~/.specsmd/fire/agents/builder/skills/run-status/SKILL.md",
+      "source_sha256": "cb713a2d5d28494e554cce23ca95355f6705097a83f10abf7ebd9a4e8613b80b",
+      "sha256": "cb713a2d5d28494e554cce23ca95355f6705097a83f10abf7ebd9a4e8613b80b"
+    },
+    {
+      "path": "optional/specsmd/resources/fire/agents/builder/skills/walkthrough-generate/SKILL.md",
+      "source": "~/.specsmd/fire/agents/builder/skills/walkthrough-generate/SKILL.md",
+      "source_sha256": "137b2b3e0dd50b346ba04b37872c1026e30894c73d277f30c5a6668b226bb9b8",
+      "sha256": "137b2b3e0dd50b346ba04b37872c1026e30894c73d277f30c5a6668b226bb9b8"
+    },
+    {
+      "path": "optional/specsmd/resources/fire/agents/builder/skills/walkthrough-generate/templates/walkthrough.md.hbs",
+      "source": "~/.specsmd/fire/agents/builder/skills/walkthrough-generate/templates/walkthrough.md.hbs",
+      "source_sha256": "d79fe02e77598795b397f7354706c37b385b51763cd9770c7e85e10570247003",
+      "sha256": "d79fe02e77598795b397f7354706c37b385b51763cd9770c7e85e10570247003"
+    },
+    {
+      "path": "optional/specsmd/resources/fire/agents/orchestrator/agent.md",
+      "source": "~/.specsmd/fire/agents/orchestrator/agent.md",
+      "source_sha256": "3fe9c40491019b94f253d07439c6b4ddf24c40e2e69338e12f72995956ce20d2",
+      "sha256": "b3ccfdf3657e5b62f0638738ef2e843bdf2b86f9bedfca5a504c177989b1bc18"
+    },
+    {
+      "path": "optional/specsmd/resources/fire/agents/orchestrator/skills/project-init/SKILL.md",
+      "source": "~/.specsmd/fire/agents/orchestrator/skills/project-init/SKILL.md",
+      "source_sha256": "84f6d01369330cfbf95f5c8da6624ec480cccd615795c847f929b31dc022e197",
+      "sha256": "84f6d01369330cfbf95f5c8da6624ec480cccd615795c847f929b31dc022e197"
+    },
+    {
+      "path": "optional/specsmd/resources/fire/agents/orchestrator/skills/project-init/templates/coding-standards.md.hbs",
+      "source": "~/.specsmd/fire/agents/orchestrator/skills/project-init/templates/coding-standards.md.hbs",
+      "source_sha256": "c7f0d56a634153d4f3f39b36ef428035285e3369d2c71d8d84b4f987ba0b262b",
+      "sha256": "c7f0d56a634153d4f3f39b36ef428035285e3369d2c71d8d84b4f987ba0b262b"
+    },
+    {
+      "path": "optional/specsmd/resources/fire/agents/orchestrator/skills/project-init/templates/constitution.md.hbs",
+      "source": "~/.specsmd/fire/agents/orchestrator/skills/project-init/templates/constitution.md.hbs",
+      "source_sha256": "72997d2936ff801d04e448b885a983479f86b0a403a0f350c0eff92cfe56a208",
+      "sha256": "72997d2936ff801d04e448b885a983479f86b0a403a0f350c0eff92cfe56a208"
+    },
+    {
+      "path": "optional/specsmd/resources/fire/agents/orchestrator/skills/project-init/templates/system-architecture.md.hbs",
+      "source": "~/.specsmd/fire/agents/orchestrator/skills/project-init/templates/system-architecture.md.hbs",
+      "source_sha256": "b04ff86cf80652432f21960998fa9e8d3fbe499e585ff1bf5c988b6cc74755a3",
+      "sha256": "b04ff86cf80652432f21960998fa9e8d3fbe499e585ff1bf5c988b6cc74755a3"
+    },
+    {
+      "path": "optional/specsmd/resources/fire/agents/orchestrator/skills/project-init/templates/tech-stack.md.hbs",
+      "source": "~/.specsmd/fire/agents/orchestrator/skills/project-init/templates/tech-stack.md.hbs",
+      "source_sha256": "e6f7dc6c86e23437b755c4874c55596b38fb26b3ef5853bfcea0ce660556bcce",
+      "sha256": "e6f7dc6c86e23437b755c4874c55596b38fb26b3ef5853bfcea0ce660556bcce"
+    },
+    {
+      "path": "optional/specsmd/resources/fire/agents/orchestrator/skills/project-init/templates/testing-standards.md.hbs",
+      "source": "~/.specsmd/fire/agents/orchestrator/skills/project-init/templates/testing-standards.md.hbs",
+      "source_sha256": "b165e0d89691a2f816d2864fbc30bc9d91cc004d7b3fb7f4754bd0a79a4526fc",
+      "sha256": "b165e0d89691a2f816d2864fbc30bc9d91cc004d7b3fb7f4754bd0a79a4526fc"
+    },
+    {
+      "path": "optional/specsmd/resources/fire/agents/orchestrator/skills/route/SKILL.md",
+      "source": "~/.specsmd/fire/agents/orchestrator/skills/route/SKILL.md",
+      "source_sha256": "f5cb32a78799293be1e106138f8bb49dbf890e5fb6c2f9d549b40ac61811f86d",
+      "sha256": "f5cb32a78799293be1e106138f8bb49dbf890e5fb6c2f9d549b40ac61811f86d"
+    },
+    {
+      "path": "optional/specsmd/resources/fire/agents/orchestrator/skills/status/SKILL.md",
+      "source": "~/.specsmd/fire/agents/orchestrator/skills/status/SKILL.md",
+      "source_sha256": "739c72fd01a8a1c8e7a2591a770dffff7fca005b6124c651c86692fd9f141829",
+      "sha256": "739c72fd01a8a1c8e7a2591a770dffff7fca005b6124c651c86692fd9f141829"
+    },
+    {
+      "path": "optional/specsmd/resources/fire/agents/planner/agent.md",
+      "source": "~/.specsmd/fire/agents/planner/agent.md",
+      "source_sha256": "9dc912799c4fe50ffe9ab30a5806b0966720a65a14ec2df018c55a8ad51cac68",
+      "sha256": "9dc912799c4fe50ffe9ab30a5806b0966720a65a14ec2df018c55a8ad51cac68"
+    },
+    {
+      "path": "optional/specsmd/resources/fire/agents/planner/skills/design-doc-generate/SKILL.md",
+      "source": "~/.specsmd/fire/agents/planner/skills/design-doc-generate/SKILL.md",
+      "source_sha256": "778a7576d48940ab1168ce0e205baece41159ee15fe44cdd2a14abec71e4e4ef",
+      "sha256": "778a7576d48940ab1168ce0e205baece41159ee15fe44cdd2a14abec71e4e4ef"
+    },
+    {
+      "path": "optional/specsmd/resources/fire/agents/planner/skills/design-doc-generate/templates/design.md.hbs",
+      "source": "~/.specsmd/fire/agents/planner/skills/design-doc-generate/templates/design.md.hbs",
+      "source_sha256": "ace6117002dc5f1a0f099807ecdcb844b74d9b82fd01ac06d1e75b53df56dea8",
+      "sha256": "ace6117002dc5f1a0f099807ecdcb844b74d9b82fd01ac06d1e75b53df56dea8"
+    },
+    {
+      "path": "optional/specsmd/resources/fire/agents/planner/skills/intent-capture/SKILL.md",
+      "source": "~/.specsmd/fire/agents/planner/skills/intent-capture/SKILL.md",
+      "source_sha256": "bd95ff68b08dc302bfde84308b6d0163d47b9bfa4df2ba2868429d0c45a019c5",
+      "sha256": "bd95ff68b08dc302bfde84308b6d0163d47b9bfa4df2ba2868429d0c45a019c5"
+    },
+    {
+      "path": "optional/specsmd/resources/fire/agents/planner/skills/intent-capture/templates/brief.md.hbs",
+      "source": "~/.specsmd/fire/agents/planner/skills/intent-capture/templates/brief.md.hbs",
+      "source_sha256": "b5984c67ed48a9fc60bc72c977d7691c6c8ddde18fbf013be0384f2aed5cd81d",
+      "sha256": "b5984c67ed48a9fc60bc72c977d7691c6c8ddde18fbf013be0384f2aed5cd81d"
+    },
+    {
+      "path": "optional/specsmd/resources/fire/agents/planner/skills/work-item-decompose/SKILL.md",
+      "source": "~/.specsmd/fire/agents/planner/skills/work-item-decompose/SKILL.md",
+      "source_sha256": "3b4d1df44e58f4f2c8c061a091313a4f3a7c75abbd904e9e775e67bc8702fc90",
+      "sha256": "3b4d1df44e58f4f2c8c061a091313a4f3a7c75abbd904e9e775e67bc8702fc90"
+    },
+    {
+      "path": "optional/specsmd/resources/fire/agents/planner/skills/work-item-decompose/templates/work-item.md.hbs",
+      "source": "~/.specsmd/fire/agents/planner/skills/work-item-decompose/templates/work-item.md.hbs",
+      "source_sha256": "9918f67d8fda9c0175ea7f52d8fa3477670c43abc900a9b3929c1dae8df1760e",
+      "sha256": "9918f67d8fda9c0175ea7f52d8fa3477670c43abc900a9b3929c1dae8df1760e"
+    },
+    {
+      "path": "optional/specsmd/resources/fire/memory-bank.yaml",
+      "source": "~/.specsmd/fire/memory-bank.yaml",
+      "source_sha256": "d6d02fa77fbeeb8080b3af4ade72634221c685027a31d459e7cda727abedc49e",
+      "sha256": "d6d02fa77fbeeb8080b3af4ade72634221c685027a31d459e7cda727abedc49e"
+    },
+    {
+      "path": "optional/specsmd/resources/fire/quick-start.md",
+      "source": "~/.specsmd/fire/quick-start.md",
+      "source_sha256": "c965428c9c1f0c88c355b79774e8356271db6a9d0cdfe4b9396bd10a851dda37",
+      "sha256": "c965428c9c1f0c88c355b79774e8356271db6a9d0cdfe4b9396bd10a851dda37"
+    },
+    {
+      "path": "optional/specsmd/resources/ideation/README.md",
+      "source": "~/.specsmd/ideation/README.md",
+      "source_sha256": "9e3457adbbd4c18a69cf9094fb27d6acaa7d1bb6e10e6342b86f721a60df4f74",
+      "sha256": "168aa171c4fb98b0df55ffe028c147371eba48278a9f294b4d952668581abac5"
+    },
+    {
+      "path": "optional/specsmd/resources/ideation/agents/orchestrator/agent.md",
+      "source": "~/.specsmd/ideation/agents/orchestrator/agent.md",
+      "source_sha256": "9af861bdc863b3c758c467d2e4ddc01c511a1688f610d9a7213e38f9579af89a",
+      "sha256": "3c28e3c03f4afc0ac9e99beaf6dd4760ecc9d0cfd27b3507288a9e3d488878ae"
+    },
+    {
+      "path": "optional/specsmd/resources/ideation/agents/orchestrator/skills/flame/SKILL.md",
+      "source": "~/.specsmd/ideation/agents/orchestrator/skills/flame/SKILL.md",
+      "source_sha256": "a0f78f43623bdc6038ad69a1e50046db52e60a495289b4e3137e7cc69a8c1d8c",
+      "sha256": "512897a1ca46d7ae3a8e10e60532c1586143b68a80a23caad96815dc4fd5d1b4"
+    },
+    {
+      "path": "optional/specsmd/resources/ideation/agents/orchestrator/skills/flame/references/evaluation-criteria.md",
+      "source": "~/.specsmd/ideation/agents/orchestrator/skills/flame/references/evaluation-criteria.md",
+      "source_sha256": "ef90596f58f5436dce7fb9ab353f85aa94ab2c463aa731eef6fb65a408b1a1a1",
+      "sha256": "ef90596f58f5436dce7fb9ab353f85aa94ab2c463aa731eef6fb65a408b1a1a1"
+    },
+    {
+      "path": "optional/specsmd/resources/ideation/agents/orchestrator/skills/flame/references/six-hats-method.md",
+      "source": "~/.specsmd/ideation/agents/orchestrator/skills/flame/references/six-hats-method.md",
+      "source_sha256": "5a20bd58749266bcd0d7aeab7fc53716378435b186415245a618b69be448375c",
+      "sha256": "5a20bd58749266bcd0d7aeab7fc53716378435b186415245a618b69be448375c"
+    },
+    {
+      "path": "optional/specsmd/resources/ideation/agents/orchestrator/skills/flame/templates/flame-report.md.hbs",
+      "source": "~/.specsmd/ideation/agents/orchestrator/skills/flame/templates/flame-report.md.hbs",
+      "source_sha256": "763627b9fb4d9fdc7050100809e623f637730b767b58125991639c9739c267c4",
+      "sha256": "763627b9fb4d9fdc7050100809e623f637730b767b58125991639c9739c267c4"
+    },
+    {
+      "path": "optional/specsmd/resources/ideation/agents/orchestrator/skills/forge/SKILL.md",
+      "source": "~/.specsmd/ideation/agents/orchestrator/skills/forge/SKILL.md",
+      "source_sha256": "b46b09086dcaf0410bdb544be07bbe7c9f090f9436420bdf04e648870e050f68",
+      "sha256": "d6e2c29d1873d758733fe697d929f007d37bf8f930798e8f7ac461fa09bb4362"
+    },
+    {
+      "path": "optional/specsmd/resources/ideation/agents/orchestrator/skills/forge/references/disney-method.md",
+      "source": "~/.specsmd/ideation/agents/orchestrator/skills/forge/references/disney-method.md",
+      "source_sha256": "309e4fe7f96de4ba3d81b88dc1a510fc19e794fb9ea0315192aa30c63251cc47",
+      "sha256": "309e4fe7f96de4ba3d81b88dc1a510fc19e794fb9ea0315192aa30c63251cc47"
+    },
+    {
+      "path": "optional/specsmd/resources/ideation/agents/orchestrator/skills/forge/references/pitch-framework.md",
+      "source": "~/.specsmd/ideation/agents/orchestrator/skills/forge/references/pitch-framework.md",
+      "source_sha256": "067fdb707459b6e71180c429c4b0ecc3c2fa91048073c6a8f7f2c5c3515df2ea",
+      "sha256": "067fdb707459b6e71180c429c4b0ecc3c2fa91048073c6a8f7f2c5c3515df2ea"
+    },
+    {
+      "path": "optional/specsmd/resources/ideation/agents/orchestrator/skills/forge/templates/concept-brief.md.hbs",
+      "source": "~/.specsmd/ideation/agents/orchestrator/skills/forge/templates/concept-brief.md.hbs",
+      "source_sha256": "73a2d4fdf2b2b2cb4fbb419f6b1105dd9833296a5eab7992d50224fc45912e91",
+      "sha256": "73a2d4fdf2b2b2cb4fbb419f6b1105dd9833296a5eab7992d50224fc45912e91"
+    },
+    {
+      "path": "optional/specsmd/resources/ideation/agents/orchestrator/skills/spark/SKILL.md",
+      "source": "~/.specsmd/ideation/agents/orchestrator/skills/spark/SKILL.md",
+      "source_sha256": "3a7f537630a7ef4677cf3ebd8047d7d26f20059e6dd335a9f184eb34341e9963",
+      "sha256": "2208b188f1f8ad661bf2416c2b8ce2bfc067113a8dde2123997e02d3892c6888"
+    },
+    {
+      "path": "optional/specsmd/resources/ideation/agents/orchestrator/skills/spark/references/anti-bias.md",
+      "source": "~/.specsmd/ideation/agents/orchestrator/skills/spark/references/anti-bias.md",
+      "source_sha256": "2fa89b5d7a0a906b17d9e0c9e691225f5a450128d90aefeae0396f0cfd040e63",
+      "sha256": "2fa89b5d7a0a906b17d9e0c9e691225f5a450128d90aefeae0396f0cfd040e63"
+    },
+    {
+      "path": "optional/specsmd/resources/ideation/agents/orchestrator/skills/spark/references/techniques/analogy.md",
+      "source": "~/.specsmd/ideation/agents/orchestrator/skills/spark/references/techniques/analogy.md",
+      "source_sha256": "f2bc2907133f215d1d6d2ec529da8072e445cc7cc3735734a10f7392a5cd0e97",
+      "sha256": "f2bc2907133f215d1d6d2ec529da8072e445cc7cc3735734a10f7392a5cd0e97"
+    },
+    {
+      "path": "optional/specsmd/resources/ideation/agents/orchestrator/skills/spark/references/techniques/first-principles.md",
+      "source": "~/.specsmd/ideation/agents/orchestrator/skills/spark/references/techniques/first-principles.md",
+      "source_sha256": "919e4e96e4b9e73ef822c03f7123d52136ae9cf3d02de6cc7b7a98c12a335112",
+      "sha256": "919e4e96e4b9e73ef822c03f7123d52136ae9cf3d02de6cc7b7a98c12a335112"
+    },
+    {
+      "path": "optional/specsmd/resources/ideation/agents/orchestrator/skills/spark/references/techniques/index.yaml",
+      "source": "~/.specsmd/ideation/agents/orchestrator/skills/spark/references/techniques/index.yaml",
+      "source_sha256": "54986161728f59cd22151eb1a84103b98eb1edb9f7e177c47ff5ca132d437ea1",
+      "sha256": "54986161728f59cd22151eb1a84103b98eb1edb9f7e177c47ff5ca132d437ea1"
+    },
+    {
+      "path": "optional/specsmd/resources/ideation/agents/orchestrator/skills/spark/references/techniques/inversion.md",
+      "source": "~/.specsmd/ideation/agents/orchestrator/skills/spark/references/techniques/inversion.md",
+      "source_sha256": "2b953377ec770ab4b60a444e7c2e4c0b62fc205d5220dbe665a9b33359b8d35b",
+      "sha256": "2b953377ec770ab4b60a444e7c2e4c0b62fc205d5220dbe665a9b33359b8d35b"
+    },
+    {
+      "path": "optional/specsmd/resources/ideation/agents/orchestrator/skills/spark/references/techniques/questorming.md",
+      "source": "~/.specsmd/ideation/agents/orchestrator/skills/spark/references/techniques/questorming.md",
+      "source_sha256": "b81c03025470e8a1b749530c604161c6937345c589174dc1eb6465c5980d8b22",
+      "sha256": "b81c03025470e8a1b749530c604161c6937345c589174dc1eb6465c5980d8b22"
+    },
+    {
+      "path": "optional/specsmd/resources/ideation/agents/orchestrator/skills/spark/references/techniques/random-word.md",
+      "source": "~/.specsmd/ideation/agents/orchestrator/skills/spark/references/techniques/random-word.md",
+      "source_sha256": "efdea7a278f9d877fee19c21dd2739fcbdab237dcbf3457e270ee2f6223e46b9",
+      "sha256": "efdea7a278f9d877fee19c21dd2739fcbdab237dcbf3457e270ee2f6223e46b9"
+    },
+    {
+      "path": "optional/specsmd/resources/ideation/agents/orchestrator/skills/spark/references/techniques/scamper.md",
+      "source": "~/.specsmd/ideation/agents/orchestrator/skills/spark/references/techniques/scamper.md",
+      "source_sha256": "07e1554dfb9b08e17dbd61e0350ea0bcecc91313ab7037f2b1b97bf13b9cfe63",
+      "sha256": "07e1554dfb9b08e17dbd61e0350ea0bcecc91313ab7037f2b1b97bf13b9cfe63"
+    },
+    {
+      "path": "optional/specsmd/resources/ideation/agents/orchestrator/skills/spark/references/techniques/what-if.md",
+      "source": "~/.specsmd/ideation/agents/orchestrator/skills/spark/references/techniques/what-if.md",
+      "source_sha256": "2ba4043a6b1f6e0212d82b7ae8b1b3734cf59ca458f6b938c036c0f0c9b853ec",
+      "sha256": "2ba4043a6b1f6e0212d82b7ae8b1b3734cf59ca458f6b938c036c0f0c9b853ec"
+    },
+    {
+      "path": "optional/specsmd/resources/ideation/agents/orchestrator/skills/spark/templates/spark-bank.md.hbs",
+      "source": "~/.specsmd/ideation/agents/orchestrator/skills/spark/templates/spark-bank.md.hbs",
+      "source_sha256": "5b3ba0b1d1616617ce188b9412a4247b559887c7bc113e3fd73098d805e0322e",
+      "sha256": "5b3ba0b1d1616617ce188b9412a4247b559887c7bc113e3fd73098d805e0322e"
+    },
+    {
+      "path": "optional/specsmd/resources/ideation/memory-bank.yaml",
+      "source": "~/.specsmd/ideation/memory-bank.yaml",
+      "source_sha256": "5f98dbaf0821732debed41eb4b763e6eb6b743b036975f0625c8995130e35b09",
+      "sha256": "5f98dbaf0821732debed41eb4b763e6eb6b743b036975f0625c8995130e35b09"
+    },
+    {
+      "path": "optional/specsmd/resources/ideation/quick-start.md",
+      "source": "~/.specsmd/ideation/quick-start.md",
+      "source_sha256": "f2fd7e961dd9f5c2660ead631fadf386fd492692e07e2112b2f9a736e83a8609",
+      "sha256": "f2fd7e961dd9f5c2660ead631fadf386fd492692e07e2112b2f9a736e83a8609"
+    },
+    {
+      "path": "optional/specsmd/resources/ideation/shared/protocols/anti-bias.md",
+      "source": "~/.specsmd/ideation/shared/protocols/anti-bias.md",
+      "source_sha256": "90c7373ebdb2b4704f3945f95078c6bdde11888d8baf0dad33c19b5504ac8ce6",
+      "sha256": "90c7373ebdb2b4704f3945f95078c6bdde11888d8baf0dad33c19b5504ac8ce6"
+    },
+    {
+      "path": "optional/specsmd/resources/ideation/shared/protocols/deep-thinking.md",
+      "source": "~/.specsmd/ideation/shared/protocols/deep-thinking.md",
+      "source_sha256": "050b0b58e8be6a7c0f81778f8fbea0eaa8e883ef4e183cf060f8c132d5e052e8",
+      "sha256": "050b0b58e8be6a7c0f81778f8fbea0eaa8e883ef4e183cf060f8c132d5e052e8"
+    },
+    {
+      "path": "optional/specsmd/resources/ideation/shared/protocols/diverge-converge.md",
+      "source": "~/.specsmd/ideation/shared/protocols/diverge-converge.md",
+      "source_sha256": "dcb876cd9979ff858daf4ec79a6e7a7f1f2a92cc04b323f973cc64806ccb5ecb",
+      "sha256": "dcb876cd9979ff858daf4ec79a6e7a7f1f2a92cc04b323f973cc64806ccb5ecb"
+    },
+    {
+      "path": "optional/specsmd/resources/ideation/shared/protocols/interaction-adaptation.md",
+      "source": "~/.specsmd/ideation/shared/protocols/interaction-adaptation.md",
+      "source_sha256": "bfef06f8108fd172297a630c1c5c10aec4b2dd0217dfe9bc3a65ff75761a14ec",
+      "sha256": "bfef06f8108fd172297a630c1c5c10aec4b2dd0217dfe9bc3a65ff75761a14ec"
+    },
+    {
+      "path": "optional/specsmd/resources/simple/README.md",
+      "source": "~/.specsmd/simple/README.md",
+      "source_sha256": "5ad55f1a6ab0435c48e724411c9bccea12eeb39ab86eaff0a9526be1b49dbe91",
+      "sha256": "5ad55f1a6ab0435c48e724411c9bccea12eeb39ab86eaff0a9526be1b49dbe91"
+    },
+    {
+      "path": "optional/specsmd/resources/simple/agents/agent.md",
+      "source": "~/.specsmd/simple/agents/agent.md",
+      "source_sha256": "e949632f9c5f09fdb75651f36a974c2efe3359c2363dc3744a30b24a7bda53fe",
+      "sha256": "7ece775b799143de96dec08cec48fd8fee2cd9a95581a242dbbbfcfe990e44b5"
+    },
+    {
+      "path": "optional/specsmd/resources/simple/context-config.yaml",
+      "source": "~/.specsmd/simple/context-config.yaml",
+      "source_sha256": "16c424563ff8cf5a5f0274c04f1f63f8d741aae70a133384f07f55c1bd833954",
+      "sha256": "547a521de5cea8bfd80852e3889e7e3eb3bbef1a51884588d122f99820e01110"
+    },
+    {
+      "path": "optional/specsmd/resources/simple/memory-bank.yaml",
+      "source": "~/.specsmd/simple/memory-bank.yaml",
+      "source_sha256": "12ea7c3524b5fbd11aa23ecff3073f0c5d849711cc418b512e7a6ced45b62ead",
+      "sha256": "12ea7c3524b5fbd11aa23ecff3073f0c5d849711cc418b512e7a6ced45b62ead"
+    },
+    {
+      "path": "optional/specsmd/resources/simple/quick-start.md",
+      "source": "~/.specsmd/simple/quick-start.md",
+      "source_sha256": "5d54ea8cf089bde5370956a6a14389c606f6657d749feacbae6f38c10ef3b370",
+      "sha256": "35fadbca8e40af5e0bc7d005ccf2a06029d8d6896d63c370922369ae49aac8f3"
+    },
+    {
+      "path": "optional/specsmd/resources/simple/skills/design.md",
+      "source": "~/.specsmd/simple/skills/design.md",
+      "source_sha256": "f013d4f2b368beeb61d506d0e9f4f496041348ef0ecff5f64462e27b880b8236",
+      "sha256": "965bbcf640c053225eb65476b35252712013fbb1d0ab992bdc77c2b1beff8b39"
+    },
+    {
+      "path": "optional/specsmd/resources/simple/skills/execute.md",
+      "source": "~/.specsmd/simple/skills/execute.md",
+      "source_sha256": "8b8dde10ac86ae9123fde46264c38e16b67db7712ab91c899157c5b621c950e3",
+      "sha256": "8b8dde10ac86ae9123fde46264c38e16b67db7712ab91c899157c5b621c950e3"
+    },
+    {
+      "path": "optional/specsmd/resources/simple/skills/requirements.md",
+      "source": "~/.specsmd/simple/skills/requirements.md",
+      "source_sha256": "4314932134661d0897e3d2f87a48f237f659407ac6965e15277ae3f24d40e472",
+      "sha256": "a129434b67a403825fe1c43ee8e50b46c711caf2accc53a54f55d53276849913"
+    },
+    {
+      "path": "optional/specsmd/resources/simple/skills/tasks.md",
+      "source": "~/.specsmd/simple/skills/tasks.md",
+      "source_sha256": "1f03d601626a1e5798906ca22071ac4c7343eb58eac96064e0b3bb8634187dd0",
+      "sha256": "472a011ed5f68de415c184d85f728f61dca4d3a5502d26fbee1cb093371a6ca9"
+    },
+    {
+      "path": "optional/specsmd/resources/simple/templates/design-template.md",
+      "source": "~/.specsmd/simple/templates/design-template.md",
+      "source_sha256": "ec7e6bb989e692f9bfdce4a94b5fbe70743ae970af87705deae46c41fb05fcf9",
+      "sha256": "ec7e6bb989e692f9bfdce4a94b5fbe70743ae970af87705deae46c41fb05fcf9"
+    },
+    {
+      "path": "optional/specsmd/resources/simple/templates/requirements-template.md",
+      "source": "~/.specsmd/simple/templates/requirements-template.md",
+      "source_sha256": "3460df3a656b950c6a0d1be908200a464cbcd6a96eee9dfbe750158379497985",
+      "sha256": "3460df3a656b950c6a0d1be908200a464cbcd6a96eee9dfbe750158379497985"
+    },
+    {
+      "path": "optional/specsmd/resources/simple/templates/tasks-template.md",
+      "source": "~/.specsmd/simple/templates/tasks-template.md",
+      "source_sha256": "45097a04807a3c75f4ea66877dfb9e1b288ccef7dfa9ad8b12b0c80864aa262d",
+      "sha256": "45097a04807a3c75f4ea66877dfb9e1b288ccef7dfa9ad8b12b0c80864aa262d"
+    },
+    {
+      "path": "optional/specsmd/upstream-package.json",
+      "source": "~/.npm/_npx/541b0f8da70d21e0/node_modules/specsmd/package.json",
+      "source_sha256": "83ae3d3b5a3174e06bd967c879d840a694afd37a20ca6e220ed7349e1a3e7ae0",
+      "sha256": "83ae3d3b5a3174e06bd967c879d840a694afd37a20ca6e220ed7349e1a3e7ae0"
+    },
+    {
+      "path": "optional/specsmd/wrappers/specsmd-agent.md",
+      "source": "~/.agents/skills/specsmd-agent/SKILL.md",
+      "source_sha256": "bbb88294ddb77cacf8e1f12e2ff2bc033695454a358f46baf90658c4cced9c3b",
+      "sha256": "0812c464f64935b87300d6109f01790d4dbe01bd0648920e114768844c5e2da3"
+    },
+    {
+      "path": "optional/specsmd/wrappers/specsmd-construction-agent.md",
+      "source": "~/.agents/skills/specsmd-construction-agent/SKILL.md",
+      "source_sha256": "7326261ea4a41e01f3069420408cdfa533800fdb238a33a2f9bcbd04ac3a1e2d",
+      "sha256": "16f2c281622c635092ddf9b17b99445a772302bc5a42a62972924612a485eda8"
+    },
+    {
+      "path": "optional/specsmd/wrappers/specsmd-fire-builder.md",
+      "source": "~/.agents/skills/specsmd-fire-builder/SKILL.md",
+      "source_sha256": "ca6d667a0c92821657f041ca353087b9844366c69a7911e172f0daa00017688e",
+      "sha256": "5354dbca5e970117920bb97489847d7e4c3436a67919623bea9cfb85eb779bc4"
+    },
+    {
+      "path": "optional/specsmd/wrappers/specsmd-fire-planner.md",
+      "source": "~/.agents/skills/specsmd-fire-planner/SKILL.md",
+      "source_sha256": "783adb7f98870736e94ca32101cca3a7166807f9bd47cb231dc6b1a8dbe31ffa",
+      "sha256": "f8f1beefb896d0513fe9831866865acae7172a4ced3a2e1fbd3baa95df827c7c"
+    },
+    {
+      "path": "optional/specsmd/wrappers/specsmd-fire.md",
+      "source": "~/.agents/skills/specsmd-fire/SKILL.md",
+      "source_sha256": "33459eaff09282d47d266fd74993605e63d93effa4e3e8b97fa48891112a28f2",
+      "sha256": "64f3c137dd8f20ee8907164616ba3bce1398db68fe2a68529f9e566b5670589c"
+    },
+    {
+      "path": "optional/specsmd/wrappers/specsmd-flame.md",
+      "source": "~/.agents/skills/specsmd-flame/SKILL.md",
+      "source_sha256": "b68d8039843ca77188b00c6fdbdc071fa1509b04baf6cc021e461ee808b5d7eb",
+      "sha256": "64279245d66db06e3fd3b2e2639e7b5e8dd10121fdcc7742cbf64351f815e522"
+    },
+    {
+      "path": "optional/specsmd/wrappers/specsmd-forge.md",
+      "source": "~/.agents/skills/specsmd-forge/SKILL.md",
+      "source_sha256": "6a3f956d01929b6b23cb7bd67657ef33fc58bcc48b6dbbe219ea04a97929c1e8",
+      "sha256": "63de10345e47ca449a4a4255cd28fae3d1479ac60493ba9ebc205df6aa470821"
+    },
+    {
+      "path": "optional/specsmd/wrappers/specsmd-ideation.md",
+      "source": "~/.agents/skills/specsmd-ideation/SKILL.md",
+      "source_sha256": "b0544ab0a5d72db340e359f9d1030c94298b258b9906fe267616608eb286318a",
+      "sha256": "96f8ffe34bea309883c265c2abf43161b3219f0c42e4212ef57fe39cfd86eaf2"
+    },
+    {
+      "path": "optional/specsmd/wrappers/specsmd-inception-agent.md",
+      "source": "~/.agents/skills/specsmd-inception-agent/SKILL.md",
+      "source_sha256": "c373fc51cf58ab4aaa7e30b4617140df66b260690e5b1bc60e0c92130c3a024a",
+      "sha256": "4997c75c9adb4e99f60e3ce48e9b29cc806b613494cb4c74dcfb4e4c53fcd5b5"
+    },
+    {
+      "path": "optional/specsmd/wrappers/specsmd-master-agent.md",
+      "source": "~/.agents/skills/specsmd-master-agent/SKILL.md",
+      "source_sha256": "449a1c9033a1eeaaa8990bdb2a73f29f0233928e359d263bf0dfe4b3816a86b5",
+      "sha256": "2ece0106d0594186f522536c78438437e310a8a08d5c9f72b2280017d133c3af"
+    },
+    {
+      "path": "optional/specsmd/wrappers/specsmd-operations-agent.md",
+      "source": "~/.agents/skills/specsmd-operations-agent/SKILL.md",
+      "source_sha256": "9afff6fe941d9a45be0c0d41f07ee62ec90171abfc79e5e2e4c282d861391e51",
+      "sha256": "628e6c4db8651fc438745d6df6fecca9c94684b642247caddebf970dd2569ecf"
+    },
+    {
+      "path": "optional/specsmd/wrappers/specsmd-spark.md",
+      "source": "~/.agents/skills/specsmd-spark/SKILL.md",
+      "source_sha256": "118a6dc4d2ba307c634d57e4330bcfbd90a112ba213dd19f99ef297e2cdce07e",
+      "sha256": "143a24d5aab0e255c162d1ce801c7a7ff197c4ded44af71b7e362617b9d4d513"
+    },
+    {
+      "path": "skills/README.md",
+      "source": "project-authored",
+      "source_sha256": null,
+      "sha256": "5b4eeed52afb07c3838b20e59936be2c85109f07ce3bba71462f8d1d632d6c75"
+    },
+    {
+      "path": "skills/caveman-commit/LICENSE",
+      "source": "skills/caveman/LICENSE",
+      "source_sha256": "5eb826cd03151bcc7cce3f80d40e87733237fedfc6c36d6908aca5fd650a0bdb",
+      "sha256": "5eb826cd03151bcc7cce3f80d40e87733237fedfc6c36d6908aca5fd650a0bdb"
+    },
+    {
+      "path": "skills/caveman-commit/SKILL.md",
+      "source": "~/.agents/skills/caveman-commit/SKILL.md",
+      "source_sha256": "58db7b8efab911a629c26e7132517d9076e4e3645009eb604cb8c25663477841",
+      "sha256": "662cee9102d7f612c1ea7b0274ac99c63315f2577be487065d3674175599455c"
+    },
+    {
+      "path": "skills/caveman/LICENSE",
+      "source": "~/VS/agentic-setup/licenses/caveman-MIT.txt",
+      "source_sha256": "5eb826cd03151bcc7cce3f80d40e87733237fedfc6c36d6908aca5fd650a0bdb",
+      "sha256": "5eb826cd03151bcc7cce3f80d40e87733237fedfc6c36d6908aca5fd650a0bdb"
+    },
+    {
+      "path": "skills/caveman/README.md",
+      "source": "~/.agents/skills/caveman/README.md",
+      "source_sha256": "9369b69197e5d07e0c56679f9fc346f3539f58537c17f4e804a44612f086dc73",
+      "sha256": "aa787e5b6d88231d16247bd7e0a2b73890a8475dd1265dd46705a7901ae727e3"
+    },
+    {
+      "path": "skills/caveman/SKILL.md",
+      "source": "~/.agents/skills/caveman/SKILL.md",
+      "source_sha256": "5e30bb56afbd0b01bd736f2da84180e76f18db4a64de8e124525d5c8dc2e8605",
+      "sha256": "9338fac3eb4bd64f343944207ed8f13c9e3c51643cfa2e4fd66fee2667e154be"
+    },
+    {
+      "path": "skills/project-flow/SKILL.md",
+      "source": "project-authored",
+      "source_sha256": null,
+      "sha256": "6d06b09be9852a14a7b97b4b02de7be6a58a13aad4c28c2348de0192857c60e4"
+    }
+  ],
+  "omitted": [
+    {
+      "former_path": ".agents/skills/VALIDATION.md",
+      "source": "project-authored",
+      "source_sha256": null,
+      "sha256": "898878abae042f6dcd160c66f3fb4212bd267397d63e9bce7ff97db592474d2c"
+    },
+    {
+      "former_path": ".agents/skills/humanizer/.claude-plugin/marketplace.json",
+      "source": "~/.agents/skills/humanizer/.claude-plugin/marketplace.json",
+      "source_sha256": "e539740285b660d2288a38b6d9b237396c6769828c671c46b9f91e760db6cc29",
+      "sha256": "e539740285b660d2288a38b6d9b237396c6769828c671c46b9f91e760db6cc29"
+    },
+    {
+      "former_path": ".agents/skills/humanizer/.claude-plugin/plugin.json",
+      "source": "~/.agents/skills/humanizer/.claude-plugin/plugin.json",
+      "source_sha256": "054c0afeeb03c12f01a7f156da949edfdec3a2b756588f5ff4ee7357b0c07f6a",
+      "sha256": "054c0afeeb03c12f01a7f156da949edfdec3a2b756588f5ff4ee7357b0c07f6a"
+    },
+    {
+      "former_path": ".agents/skills/humanizer/.cursor-plugin/plugin.json",
+      "source": "~/.agents/skills/humanizer/.cursor-plugin/plugin.json",
+      "source_sha256": "d1e0b50594cf4bbe57fd164b771b401713a91b76b5a213ebe8f4558bb2036546",
+      "sha256": "d1e0b50594cf4bbe57fd164b771b401713a91b76b5a213ebe8f4558bb2036546"
+    },
+    {
+      "former_path": ".agents/skills/humanizer/.github/ISSUE_TEMPLATE/config.yml",
+      "source": "~/.agents/skills/humanizer/.github/ISSUE_TEMPLATE/config.yml",
+      "source_sha256": "cb7e95de7606d07654024c8d47916796b307033e23ddb2b0a821a9bf89e999ef",
+      "sha256": "cb7e95de7606d07654024c8d47916796b307033e23ddb2b0a821a9bf89e999ef"
+    },
+    {
+      "former_path": ".agents/skills/humanizer/.github/ISSUE_TEMPLATE/new-pattern.yml",
+      "source": "~/.agents/skills/humanizer/.github/ISSUE_TEMPLATE/new-pattern.yml",
+      "source_sha256": "7436d578fa0056a09da5da6da950a03cb49f3ce27cf268ae295eb3d7ca19f604",
+      "sha256": "7436d578fa0056a09da5da6da950a03cb49f3ce27cf268ae295eb3d7ca19f604"
+    },
+    {
+      "former_path": ".agents/skills/humanizer/.github/ISSUE_TEMPLATE/rewrite-problem.yml",
+      "source": "~/.agents/skills/humanizer/.github/ISSUE_TEMPLATE/rewrite-problem.yml",
+      "source_sha256": "ecfe5e82c5b6d44683e0cb63cfad117dfdd16e30cc6f03510ef335414eea4947",
+      "sha256": "ecfe5e82c5b6d44683e0cb63cfad117dfdd16e30cc6f03510ef335414eea4947"
+    },
+    {
+      "former_path": ".agents/skills/humanizer/.github/workflows/validate.yml",
+      "source": "~/.agents/skills/humanizer/.github/workflows/validate.yml",
+      "source_sha256": "f2d6a8780fb0b3cf6fa7d2ffccd72d0fc8bee29b4e63ea0fd65924712c9055fd",
+      "sha256": "f2d6a8780fb0b3cf6fa7d2ffccd72d0fc8bee29b4e63ea0fd65924712c9055fd"
+    },
+    {
+      "former_path": ".agents/skills/humanizer/AGENTS.md",
+      "source": "~/.agents/skills/humanizer/AGENTS.md",
+      "source_sha256": "de84a449da400454df1225ddb1ced728c35bf0be7811b239e3370c7dbe1f4e69",
+      "sha256": "de84a449da400454df1225ddb1ced728c35bf0be7811b239e3370c7dbe1f4e69"
+    },
+    {
+      "former_path": ".agents/skills/humanizer/CHANGELOG.md",
+      "source": "~/.agents/skills/humanizer/CHANGELOG.md",
+      "source_sha256": "b3591fe203429f1a6bd2f713c79272e9a8e58a487843d0908d2bbe0700722afa",
+      "sha256": "b3591fe203429f1a6bd2f713c79272e9a8e58a487843d0908d2bbe0700722afa"
+    },
+    {
+      "former_path": ".agents/skills/humanizer/README.md",
+      "source": "~/.agents/skills/humanizer/README.md",
+      "source_sha256": "a07a054f230dca1e3d25e32ba6c808905b743cc6fa56bf8b6868cee0b12a0432",
+      "sha256": "f89b1c80fba866773b55d4a74ab096be1189e841edba72ec3ac32d35797d48da"
+    },
+    {
+      "former_path": ".agents/skills/humanizer/scripts/validate-package.py",
+      "source": "~/.agents/skills/humanizer/scripts/validate-package.py",
+      "source_sha256": "941bd99e52b2ba21449719bb7969607ac8117e3dc173d0c9dfe64fd274c65938",
+      "sha256": "941bd99e52b2ba21449719bb7969607ac8117e3dc173d0c9dfe64fd274c65938"
+    }
+  ]
+}

@@ -62,4 +62,8 @@ Always include body for: breaking changes, security fixes, data migrations, anyt
 
 ## Boundaries
 
-Only generates the commit message. Does not run `git commit`, does not stage files, does not amend. Output the message as a code block ready to paste. "stop caveman-commit" or "normal mode": revert to verbose commit style.
+Use this skill to compose messages. Repository rules and the user's request
+control staging, committing, amending and pushing. For a message-only request,
+output only the message as a code block. For an authorized commit request,
+apply these rules to the message and complete the requested commit.
+"stop caveman-commit" or "normal mode": revert to verbose commit style.

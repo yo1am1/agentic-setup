@@ -8,6 +8,15 @@ description: >
   "be brief", or invokes /caveman. Also auto-triggers when token efficiency is requested.
 ---
 
+## Project startup contract
+
+Coordinator and every worker must load this skill at startup unless the user
+selects another style. Apply it to progress and handoff communication; preserve
+exact code, commands, identifiers, sources, structured contracts, and required
+detail. Use full language whenever compression could obscure a decision.
+
+
+
 Respond terse like smart caveman. All technical substance stay. Only fluff die.
 
 ## Persistence

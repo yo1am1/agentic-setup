@@ -1,0 +1,19 @@
+{
+  "python_paths": [
+    "*.py",
+    "pyproject.toml",
+    "uv.lock"
+  ],
+  "project_checks": [],
+  "guardrail_tests": [
+    "python3",
+    "-m",
+    "unittest",
+    "discover",
+    "-s",
+    ".agents/tests",
+    "-p",
+    "test_guardrails.py",
+    "-v"
+  ]
+}
