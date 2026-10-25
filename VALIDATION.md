@@ -29,7 +29,7 @@ in the provenance.
 
 ## Recorded local check, 2026-10-25
 
-`make check` passed: 40 tests (26 adapter, 12 installation/guardrail, two integrity
+`make check` passed: 41 tests (26 adapter, 12 installation/guardrail, three integrity
 regressions). Metadata validation covers 38 canonical skills across the main
 environment and preserved library; all 332 recorded exports pass their hashes.
 The full layout was installed in this checkout and all 364 generated files passed

@@ -8,3 +8,5 @@
   isolated environment tests and optional Git snapshot checks.
 - Preserve the earlier backend instruction library and generator under `library/`.
 - Add a reproducible walkthrough and an attributed account of how the setup was built.
+- Keep generated optional discovery copies out of version control, including paths
+  tracked by the earlier library before migration.

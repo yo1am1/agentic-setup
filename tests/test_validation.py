@@ -11,6 +11,18 @@ ROOT = Path(__file__).resolve().parents[1]
 
 
 class ValidationCheck(unittest.TestCase):
+    def test_generated_optional_discovery_copies_are_not_tracked(self):
+        optional_names = [
+            path.parent.name
+            for path in (ROOT / '.agents/optional').glob('*/SKILL.md')
+        ]
+        result = subprocess.run(
+            ['git', 'ls-files', '--', *[
+                f'.agents/skills/{name}/' for name in optional_names
+            ]], cwd=ROOT, capture_output=True, text=True, check=True,
+        )
+        self.assertEqual(result.stdout, '')
+
     def test_invalid_metadata_and_source_drift_are_rejected(self):
         manifest = json.loads((ROOT / 'source-manifest.json').read_text())
         with tempfile.TemporaryDirectory() as folder:

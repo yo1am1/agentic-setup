@@ -2327,8 +2327,12 @@
     "path": "CHANGELOG.md",
     "source": "project-authored integration",
     "source_sha256": "6d3deb3ef5e03da60bb48003274237fe676c76f0cf853e9dfb06a8541002a060",
-    "sha256": "6d3deb3ef5e03da60bb48003274237fe676c76f0cf853e9dfb06a8541002a060",
-    "changes": []
+    "sha256": "b49c50f1e7d543eea05cb0c0e68414ed6032adb46e640751afd13f0a7ef7b2c4",
+    "changes": [
+      {
+        "description": "Verify that generated optional discovery copies remain untracked after promotion."
+      }
+    ]
   },
   {
     "path": "PROVENANCE.md",
@@ -2341,10 +2345,13 @@
     "path": "VALIDATION.md",
     "source": "project-authored integration",
     "source_sha256": "b6d9a16f511674242e88be6572649d548e28afcbf558f5bc5412e980aa64a68c",
-    "sha256": "e9fda9d234ab5c8b53f7ff1f168edb6a6eea6d72998cc9bd6b1c464202c7d805",
+    "sha256": "f779197c30255a4bb99f7a54e31bf99bdaa788721901b3c4d4ff6c9f29c1bf42",
     "changes": [
       {
         "description": "Record the observed main-environment validation results."
+      },
+      {
+        "description": "Verify that generated optional discovery copies remain untracked after promotion."
       }
     ]
   },
@@ -2482,7 +2489,11 @@
     "path": "tests/test_validation.py",
     "source": "project-authored environment regression checks",
     "source_sha256": "d79ac0d7f5c023654660b8d946ba20bd400c9adf92dfb6b8a039f0e452563396",
-    "sha256": "d79ac0d7f5c023654660b8d946ba20bd400c9adf92dfb6b8a039f0e452563396",
-    "changes": []
+    "sha256": "836d7bd1eef95ff18aa8c1c315850d024ed7791d83c333025ea2cc6540f585e2",
+    "changes": [
+      {
+        "description": "Verify that generated optional discovery copies remain untracked after promotion."
+      }
+    ]
   }
 ]
